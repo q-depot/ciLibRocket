@@ -104,20 +104,24 @@ void ciLibRocketRenderInterface::RenderGeometry(Rocket::Core::Vertex* vertices, 
 //	layout.setStaticTexCoords2d();
 //    layout.setStaticColorsRGBA();
     
-    
     ci::gl::VboMesh mesh = gl::VboMesh( num_vertices, num_indices, layout, GL_TRIANGLES );
     
-    Rocket::Core::Vertex *vert;
-    Rocket::Core::Vector2f *vec;
+//    Rocket::Core::Vertex* vertices_copy;
+
+//    if ( num_vertices > 0 )
+//        memcpy( (void*)vertices_copy, (void*)vertices, sizeof(Rocket::Core::Vertex) * ( num_vertices + 1 ) );
+    
+    
     Vec3f pos;
-    float ff;
-//        console() << vert->position.x << endl;
     
 	for( int i=0; i < num_vertices; i++ )
     {
-        vert = &vertices[i];
-        console() << vert->position.x << "." << vert->position.y << endl;
-        vec = &vert->position;
+        pos = Vec3f(vertices[i].position.x, vertices[i].position.y, 0);
+        
+        vbo_positions.push_back( pos ); <<<<<<<< THIS FUCKER BREAKS!!!!!!!!!! WTF?????
+//        vert = &vertices[i];
+//        console() << vert->position.x << "." << vert->position.y << endl;
+//        vec = &vert->position;
 //        pos.x = (float)vert->position.x;
 //                pos.x = vert->position.x;
 //		vbo_positions.push_back( Vec3f( vert->position.x, vert->position.y, 0 ) );
