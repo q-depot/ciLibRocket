@@ -28,8 +28,6 @@ class BasicSampleApp : public AppNative {
 
     Rocket::Core::Context           *mContext;
     Rocket::Core::ElementDocument   *mDocument;
-    
-    gl::VboMesh     mTestVbo;
 };
 
 void BasicSampleApp::prepareSettings( Settings *settings )
@@ -73,39 +71,7 @@ void BasicSampleApp::setup()
 		mDocument->Show();
 //		document->RemoveReference();
 	}
-
-
-
-
-    vector<uint32_t>    vbo_indices;
-	vector<Vec3f>       vbo_positions;
-	vector<Vec2f>       vbo_texCoords;
-	vector<ColorA>      vbo_colors;
     
-    gl::VboMesh::Layout layout;
-	layout.setStaticIndices();
-	layout.setStaticPositions();
-	layout.setStaticTexCoords2d();
-    layout.setStaticColorsRGBA();
-    
-    mTestVbo = gl::VboMesh( 3, 6, layout, GL_TRIANGLES );
-    
-	for( int i=0; i < 3; i++ )
-    {
-		vbo_positions.push_back( 100 * Rand::randVec3f() );
-		vbo_texCoords.push_back( Vec2f::zero() );
-		vbo_colors.push_back( ColorA( (float)i / 3.0f , 1.0 - (float)i / 3.0f, 0.0f, 1.0f ) );
-	}
-    
-	for( int i=0; i<6; i++ )
-		vbo_indices.push_back( i%3 );
-    
-	mTestVbo.bufferPositions( vbo_positions );
-	mTestVbo.bufferIndices( vbo_indices );
-    mTestVbo.bufferTexCoords2d( 0, vbo_texCoords );
-    mTestVbo.bufferColorsRGBA( vbo_colors );
-    
-//    console() << mTestVbo.getNumIndices() << endl;
 }
 
 void BasicSampleApp::mouseDown( MouseEvent event )
@@ -122,9 +88,6 @@ void BasicSampleApp::draw()
 	gl::clear( Color( 0, 0, 0 ) );
     
     mContext->Render();
-    
-//    gl::draw( mTestVbo );
-    
 }
 
 CINDER_APP_NATIVE( BasicSampleApp, RendererGl )

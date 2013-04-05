@@ -53,95 +53,56 @@ void ciLibRocketRenderInterface::SetViewport(int width, int height)
 // Called by Rocket when it wants to render geometry that it does not wish to optimise.
 void ciLibRocketRenderInterface::RenderGeometry(Rocket::Core::Vertex* vertices, int num_vertices, int* indices, int num_indices, const Rocket::Core::TextureHandle texture, const Rocket::Core::Vector2f& translation)
 {
-//    gl::color( Color::white() );
-//    gl::drawSolidRect( Rectf(0,0, 300,300) );
-//    return;
-
-	glPushMatrix();
-	glTranslatef(translation.x, translation.y, 0);
-    
-	glVertexPointer(2, GL_FLOAT, sizeof(Rocket::Core::Vertex), &vertices[0].position);
-	glEnableClientState(GL_COLOR_ARRAY);
-	glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(Rocket::Core::Vertex), &vertices[0].colour);
-    
-	if (!texture)
-	{
-		glDisable(GL_TEXTURE_2D);
-		glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-	}
-	else
-	{
-		glEnable(GL_TEXTURE_2D);
-		glBindTexture(GL_TEXTURE_2D, (GLuint) texture);
-		glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-		glTexCoordPointer(2, GL_FLOAT, sizeof(Rocket::Core::Vertex), &vertices[0].tex_coord);
-	}
-    
-	glDrawElements(GL_TRIANGLES, num_indices, GL_UNSIGNED_INT, indices);
-    
-	glPopMatrix();
-    
-    
-    
-    /////////////////////////////////////////////////////////////////////////////
-    
-//    ci::gl::pushMatrices();
-    
-//    ci::gl::translate( translation.x, translation.y );
-    
-    console() << num_vertices << " " << num_indices << std::endl;
-    
     vector<uint32_t>    vbo_indices;
 	vector<Vec3f>       vbo_positions;
 	vector<Vec2f>       vbo_texCoords;
 	vector<ColorA>      vbo_colors;
     
-    
+    //    gl::enableDepthRead();
+    //    gl::enableDepthWrite();
     
     gl::VboMesh::Layout layout;
-//	layout.setStaticIndices();
-//	layout.setStaticPositions();
-//	layout.setStaticTexCoords2d();
-//    layout.setStaticColorsRGBA();
+	layout.setStaticIndices();
+	layout.setStaticPositions();
+	layout.setStaticTexCoords2d();
+    layout.setStaticColorsRGBA();
     
     ci::gl::VboMesh mesh = gl::VboMesh( num_vertices, num_indices, layout, GL_TRIANGLES );
-    
-//    Rocket::Core::Vertex* vertices_copy;
-
-//    if ( num_vertices > 0 )
-//        memcpy( (void*)vertices_copy, (void*)vertices, sizeof(Rocket::Core::Vertex) * ( num_vertices + 1 ) );
-    
     
     Vec3f pos;
     
 	for( int i=0; i < num_vertices; i++ )
     {
-        pos = Vec3f(vertices[i].position.x, vertices[i].position.y, 0);
-        
-        vbo_positions.push_back( pos ); <<<<<<<< THIS FUCKER BREAKS!!!!!!!!!! WTF?????
-//        vert = &vertices[i];
-//        console() << vert->position.x << "." << vert->position.y << endl;
-//        vec = &vert->position;
-//        pos.x = (float)vert->position.x;
-//                pos.x = vert->position.x;
-//		vbo_positions.push_back( Vec3f( vert->position.x, vert->position.y, 0 ) );
-//		vbo_colors.push_back( ColorA( vertices[i].colour.red/255.f, vertices[i].colour.green/255.f, vertices[i].colour.blue/255.f, vertices[i].colour.alpha/255.f ) );
-//		vbo_texCoords.push_back( Vec2f( vertices[i].tex_coord.x, vertices[i].tex_coord.y ) );
+        vbo_positions.push_back( Vec3f(vertices[i].position.x, vertices[i].position.y, 0) );
+		vbo_colors.push_back( ColorA( vertices[i].colour.red/255.f, vertices[i].colour.green/255.f, vertices[i].colour.blue/255.f, vertices[i].colour.alpha/255.f ) );
+		vbo_texCoords.push_back( Vec2f( vertices[i].tex_coord.x, vertices[i].tex_coord.y ) );
 	}
     
-//	for( int i=0; i<num_indices; i++ )
-//		vbo_indices.push_back( indices[i] );
+	for( int i=0; i<num_indices; i++ )
+		vbo_indices.push_back( indices[i] );
     
-//	mesh.bufferIndices( vbo_indices );
-//	mesh.bufferPositions( vbo_positions );
-//	mesh.bufferTexCoords2d( 0, vbo_texCoords );
-//    mesh.bufferColorsRGBA( vbo_colors );
+	mesh.bufferIndices( vbo_indices );
+	mesh.bufferPositions( vbo_positions );
+	mesh.bufferTexCoords2d( 0, vbo_texCoords );
+    mesh.bufferColorsRGBA( vbo_colors );
     
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    gl::enableAlphaBlending();
+    gl::pushMatrices();
+    gl::translate(Vec2f(translation.x, translation.y));
+    gl::draw( mesh );
     
-//    gl::draw( mesh );
-
-//    ci::gl::popMatrices();
+    gl::popMatrices();
+    glDisable(GL_TEXTURE_2D);
+    gl::disableAlphaBlending();
+    
+    vbo_indices.clear();
+    vbo_positions.clear();
+    vbo_colors.clear();
+    vbo_texCoords.clear();
 }
+
 
 // Called by Rocket when it wants to compile geometry it believes will be static for the forseeable future.
 Rocket::Core::CompiledGeometryHandle ciLibRocketRenderInterface::CompileGeometry(Rocket::Core::Vertex* ROCKET_UNUSED(vertices), int ROCKET_UNUSED(num_vertices), int* ROCKET_UNUSED(indices), int ROCKET_UNUSED(num_indices), const Rocket::Core::TextureHandle ROCKET_UNUSED(texture))

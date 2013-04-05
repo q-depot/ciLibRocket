@@ -5,20 +5,20 @@ cCheck dependencies
 cProcessInfoPlistFile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist Info.plist
 cCpResource ../resources/CinderApp.icns ./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns
 cCpResource ../../../bin/rocket.py ./build/Debug/BasicSample.app/Contents/Resources/rocket.py
-cCpResource ../../../Include/Rocket/Core/Dictionary.inl ./build/Debug/BasicSample.app/Contents/Resources/Dictionary.inl
 cCpResource ../../../Include/Rocket/Core/Colour.inl ./build/Debug/BasicSample.app/Contents/Resources/Colour.inl
-cCpResource ../../../Include/Rocket/Core/Element.inl ./build/Debug/BasicSample.app/Contents/Resources/Element.inl
 cCpResource ../../../Include/Rocket/Core/ElementInstancerGeneric.inl ./build/Debug/BasicSample.app/Contents/Resources/ElementInstancerGeneric.inl
 cCpResource ../../../Include/Rocket/Core/Pool.inl ./build/Debug/BasicSample.app/Contents/Resources/Pool.inl
+cCpResource ../../../Include/Rocket/Core/Dictionary.inl ./build/Debug/BasicSample.app/Contents/Resources/Dictionary.inl
+cCpResource ../../../Include/Rocket/Core/Element.inl ./build/Debug/BasicSample.app/Contents/Resources/Element.inl
 cCpResource ../../../Include/Rocket/Core/StringBase.inl ./build/Debug/BasicSample.app/Contents/Resources/StringBase.inl
-cCpResource ../../../Include/Rocket/Core/Vector2.inl ./build/Debug/BasicSample.app/Contents/Resources/Vector2.inl
-cCpResource ../assets ./build/Debug/BasicSample.app/Contents/Resources/assets
-cCpResource ../../../Include/Rocket/Core/Variant.inl ./build/Debug/BasicSample.app/Contents/Resources/Variant.inl
 cCpResource ../../../Include/Rocket/Core/TypeConverter.inl ./build/Debug/BasicSample.app/Contents/Resources/TypeConverter.inl
-cProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample normal i386
+cCpResource ../../../Include/Rocket/Core/Variant.inl ./build/Debug/BasicSample.app/Contents/Resources/Variant.inl
+cCpResource ../assets ./build/Debug/BasicSample.app/Contents/Resources/assets
+cCpResource ../../../Include/Rocket/Core/Vector2.inl ./build/Debug/BasicSample.app/Contents/Resources/Vector2.inl
+cProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample normal x86_64
 cTouch /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
@@ -4447,9 +4447,9 @@ t1364477766
 s504904
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp
-c00000000515483440000000000002719
-t1364493124
-s10009
+c00000000515ECD200000000000002260
+t1365167392
+s8800
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.h
 c0000000051546C810000000000000F9E
@@ -4472,9 +4472,9 @@ t1364475397
 s459637
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp
-c0000000051547A2F0000000000000D0C
-t1364490799
-s3340
+c00000000515ECADD000000000000093E
+t1365166813
+s2366
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSample.LinkFileList
 c00000000515461CC0000000000000146
@@ -4482,15 +4482,28 @@ t1364484556
 s326
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.o
-t1364490828
-s2537620
+t1365166878
+s2164372
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.o
-t1364493113
-s2601340
+t1365167207
+s846568
+
+N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSample.LinkFileList
+c00000000515ECCCA000000000000014A
+t1365167306
+s330
+
+N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o
+t1365167311
+s2174828
+
+N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o
+t1365167370
+s381296
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app
-t1364493113
+t1365167371
 s102
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist
@@ -4498,8 +4511,8 @@ t1364483723
 s1463
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample
-t1364493113
-s2954048
+t1365167371
+s3107596
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/PkgInfo
 t1364483723
@@ -4566,6 +4579,45 @@ i"cinder/Matrix.h"
 i"cinder/Vector.h"
 i"cinder/Quaternion.h"
 
+N/Users/Q/Code/Cinder_DEV/include/cinder/Cinder.h
+c00000000514341340000000000000C19
+t1363362100
+s3097
+
+N/Users/Q/Code/Cinder_DEV/include/cinder/CinderMath.h
+c00000000514341340000000000001F9E
+t1363362100
+s8094
+
+N/Users/Q/Code/Cinder_DEV/include/cinder/Matrix.h
+c00000000514341340000000000000EDD
+t1363362100
+s3805
+
+N/Users/Q/Code/Cinder_DEV/include/cinder/Quaternion.h
+c00000000514341340000000000005499
+t1363362100
+s21657
+
+N/Users/Q/Code/Cinder_DEV/include/cinder/Vector.h
+c0000000051434134000000000000AD7C
+t1363362100
+s44412
+
+N/Users/Q/Code/Cinder_DEV/include/cinder/app/AppBasic.h
+c00000000514341340000000000002453
+t1363362100
+s9299
+
+N/Users/Q/Code/Cinder_DEV/include/cinder/gl/gl.h
+c00000000514341340000000000006115
+t1363362100
+s24853
+
+N/var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth
+t1365167309
+s68419868
+
 N/var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.pth
 t1364483726
 s69035948
@@ -4583,11 +4635,11 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies03d18bc4ba04b741^55f88bc4ba04b741^---0#1#0#--18"Check dependencies36"17869B98-2780-48A1-A1D0-61129F060E0C-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies77f671a0040fb741^721a72a0040fb741^---0#1#0#--18"Check dependencies36"C61BBA80-9BFA-44FB-B2EF-FF6AC0A542F3-
 
 CCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s386183626.912203
-e386183628.843961
+s386859676.303952
+e386859678.052431
 r1
 xCompileC
 x./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.o
@@ -4596,11 +4648,11 @@ xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp399ce9cab104b741^d40dd8ccb104b741^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp0000000000000000^3252"CompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.o ../src/BasicSampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/i386 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -include /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch -MMD -MT dependencies -MF /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.d --serialize-diagnostics /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.o36"2665C158-FA7D-48B4-A841-40F9EBE80A2B-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp86e34d9c020fb741^726c0d9e020fb741^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp0000000000000000^3252"CompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.o ../src/BasicSampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/i386 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -include /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch -MMD -MT dependencies -MF /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.d --serialize-diagnostics /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.o36"7649B87D-265D-4ED5-AF4A-3D77C8441D06-
 
 CCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s386185924.584189
-e386185926.260156
+s386860006.161678
+e386860007.533309
 r1
 xCompileC
 x./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.o
@@ -4609,7 +4661,33 @@ xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Compile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp45a195c4ba04b741^859942c6ba04b741^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp0000000000000000^3336"CompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.o ../../../src/ciLibRocketRenderInterface.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/i386 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -include /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch -MMD -MT dependencies -MF /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.d --serialize-diagnostics /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.o36"0EDB714A-4BAF-4F00-AE93-D7EBBACC75BA-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Compile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp3e7829e6030fb741^448788e7030fb741^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp0000000000000000^3336"CompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.o ../../../src/ciLibRocketRenderInterface.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/i386 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -include /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch -MMD -MT dependencies -MF /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.d --serialize-diagnostics /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/ciLibRocketRenderInterface.o36"10EB28E0-893A-4E1E-8D26-FC1BCEF2443A-
+
+CCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s386860109.625989
+e386860111.177950
+r1
+xCompileC
+x./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o
+x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp3754a04d040fb741^658e2d4f040fb741^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp0000000000000000^3266"CompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o ../src/BasicSampleApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/x86_64 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -include /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch -MMD -MT dependencies -MF /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.d --serialize-diagnostics /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o36"29414936-0441-4D74-95DB-A146AFCDB21D-
+
+CCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s386860192.483314
+e386860193.854913
+r1
+xCompileC
+x./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o
+x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Compile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp4bcc7ba0040fb741^94dbdaa1040fb741^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp0000000000000000^3350"CompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o ../../../src/ciLibRocketRenderInterface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/x86_64 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -include /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch -MMD -MT dependencies -MF /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.d --serialize-diagnostics /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o36"C191054B-B480-4440-AAD2-4842172BD0A0-
 
 CCpResource ../../../Include/Rocket/Core/Colour.inl ./build/Debug/BasicSample.app/Contents/Resources/Colour.inl
 s386176523.643281
@@ -4720,14 +4798,24 @@ x./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy ./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icnsa6baa40b9604b741^02d3a50b9604b741^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns000000000080d041^509"CpResource ../resources/CinderApp.icns ./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../resources/CinderApp.icns /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"F547C789-49F0-4432-ABB6-167EDF3B196F-
 
 CLd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample normal i386
-s386185926.266924
-e386185926.832707
+s386860007.540088
+e386860008.087122
 r1
 xLd
 x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample
 xnormal
 xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Link /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample246444c6ba04b741^ae2cd5c6ba04b741^---0#0#0#--1319"Ld ./build/Debug/BasicSample.app/Contents/MacOS/BasicSample normal i386    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -L/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../lib -L../../../../../blocks/ciLibRocket/bin -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -filelist /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSample.LinkFileList -mmacosx-version-min=10.7 -dead_strip ../../../../../lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework CoreVideo -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -lRocketControls.1.2.1 -lRocketCore.1.2.1 -lRocketDebugger.1.2.1 -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample36"435630FE-D1B2-48E8-943C-75BD8401C37A-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Link /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSamplef4518ae7030fb741^484e16e8030fb741^---0#0#0#--1319"Ld ./build/Debug/BasicSample.app/Contents/MacOS/BasicSample normal i386    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -L/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../lib -L../../../../../blocks/ciLibRocket/bin -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -filelist /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSample.LinkFileList -mmacosx-version-min=10.7 -dead_strip ../../../../../lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework CoreVideo -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -lRocketControls.1.2.1 -lRocketCore.1.2.1 -lRocketDebugger.1.2.1 -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample36"6BF2690D-FF07-4402-B2A5-691D35467E20-
+
+CLd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample normal x86_64
+s386860193.861633
+e386860194.395597
+r1
+xLd
+x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Link /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSampleeca2dca1040fb741^4e4665a2040fb741^---0#0#0#--1325"Ld ./build/Debug/BasicSample.app/Contents/MacOS/BasicSample normal x86_64    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -L/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../lib -L../../../../../blocks/ciLibRocket/bin -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -filelist /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSample.LinkFileList -mmacosx-version-min=10.7 -dead_strip ../../../../../lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework CoreVideo -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -lRocketControls.1.2.1 -lRocketCore.1.2.1 -lRocketDebugger.1.2.1 -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample36"D74D6F98-D045-45C0-9E10-CDCF3E2F966C-
 
 CProcessInfoPlistFile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist Info.plist
 s386176523.633398
@@ -4738,8 +4826,24 @@ x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/D
 xInfo.plist
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.pliste02fa20b9604b741^9fcda20b9604b741^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/Info.plist0000000000000000^489"ProcessInfoPlistFile ./build/Debug/BasicSample.app/Contents/Info.plist Info.plist    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist36"722DE1AE-C6D7-4C8E-B878-EAAABBB74EFB-
 
+CProcessPCH++ /Users/Q/Library/Developer/Xcode/DerivedData/BasicSample-gdzuhjroftzawkdxlppdrkuksndu/Index/PrecompiledHeaders/BasicSample_Prefix-evnukrijxstezhbqacmjipwxarhv_ast/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
 CProcessPCH++ /Users/Q/Library/Developer/Xcode/DerivedData/BasicSample-gdzuhjroftzawkdxlppdrkuksndu/Index/PrecompiledHeaders/BasicSample_Prefix-hfdppfkvdiftnabjwjiobgfvswrp_ast/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
+
+CProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s386860106.658379
+e386860109.619182
+r1
+xProcessPCH++
+x/var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth
+xBasicSample_Prefix.pch
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile BasicSample_Prefix.pch6f9ca84a040fb741^95829e4d040fb741^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/BasicSample_Prefix.pch0000000000000000^3203"ProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch x86_64 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/x86_64 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug --serialize-diagnostics /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/BasicSample_Prefix.pch -o /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.d36"92ABD53E-9DC5-488D-A408-9B1C1086EDD0-
 
 CProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s386176523.677429
@@ -4755,10 +4859,10 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile BasicSample_Prefix.pch768aad0b9604b741^ce8abc0e9604b741^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/BasicSample_Prefix.pch0000000000000000^3197"ProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/i386 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug --serialize-diagnostics /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/BasicSample_Prefix.pch -o /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.d36"53C01146-9F41-41A4-BBE6-64BD5E8FA8E5-
 
 CTouch /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app
-s386185926.840636
-e386185926.845147
+s386860194.403580
+e386860194.407837
 r1
 xTouch
 x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Touch /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app573ed7c6ba04b741^575cd8c6ba04b741^---0#0#0#--235"Touch ./build/Debug/BasicSample.app    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    /usr/bin/touch -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app36"817A4709-D6C5-45C4-A4C3-51853A78AFCD-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Touch /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app705b67a2040fb741^456868a2040fb741^---0#0#0#--235"Touch ./build/Debug/BasicSample.app    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    /usr/bin/touch -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app36"677EE71B-16D4-4307-80A3-2E4DBABFE015-
 
