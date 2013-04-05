@@ -3,21 +3,21 @@ v5
 r1
 cCheck dependencies
 cProcessInfoPlistFile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist Info.plist
-cCpResource ../resources/CinderApp.icns ./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns
 cCpResource ../../../bin/rocket.py ./build/Debug/BasicSample.app/Contents/Resources/rocket.py
-cCpResource ../../../Include/Rocket/Core/Colour.inl ./build/Debug/BasicSample.app/Contents/Resources/Colour.inl
-cCpResource ../../../Include/Rocket/Core/ElementInstancerGeneric.inl ./build/Debug/BasicSample.app/Contents/Resources/ElementInstancerGeneric.inl
-cCpResource ../../../Include/Rocket/Core/Pool.inl ./build/Debug/BasicSample.app/Contents/Resources/Pool.inl
 cCpResource ../../../Include/Rocket/Core/Dictionary.inl ./build/Debug/BasicSample.app/Contents/Resources/Dictionary.inl
+cCpResource ../resources/CinderApp.icns ./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns
+cCpResource ../../../Include/Rocket/Core/ElementInstancerGeneric.inl ./build/Debug/BasicSample.app/Contents/Resources/ElementInstancerGeneric.inl
+cCpResource ../../../Include/Rocket/Core/Colour.inl ./build/Debug/BasicSample.app/Contents/Resources/Colour.inl
 cCpResource ../../../Include/Rocket/Core/Element.inl ./build/Debug/BasicSample.app/Contents/Resources/Element.inl
+cCpResource ../../../Include/Rocket/Core/Pool.inl ./build/Debug/BasicSample.app/Contents/Resources/Pool.inl
 cCpResource ../../../Include/Rocket/Core/StringBase.inl ./build/Debug/BasicSample.app/Contents/Resources/StringBase.inl
-cCpResource ../../../Include/Rocket/Core/TypeConverter.inl ./build/Debug/BasicSample.app/Contents/Resources/TypeConverter.inl
-cCpResource ../../../Include/Rocket/Core/Variant.inl ./build/Debug/BasicSample.app/Contents/Resources/Variant.inl
 cCpResource ../assets ./build/Debug/BasicSample.app/Contents/Resources/assets
+cCpResource ../../../Include/Rocket/Core/Variant.inl ./build/Debug/BasicSample.app/Contents/Resources/Variant.inl
 cCpResource ../../../Include/Rocket/Core/Vector2.inl ./build/Debug/BasicSample.app/Contents/Resources/Vector2.inl
+cCpResource ../../../Include/Rocket/Core/TypeConverter.inl ./build/Debug/BasicSample.app/Contents/Resources/TypeConverter.inl
 cProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample normal x86_64
 cTouch /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app
 
@@ -4462,8 +4462,8 @@ t1364483662
 s416
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../assets
-c00000000515474F30000000000000264
-t1364489459
+c00000000515ECF9B0000000000000264
+t1365168027
 s612
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../resources/CinderApp.icns
@@ -4499,11 +4499,11 @@ t1365167311
 s2174828
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o
-t1365167370
-s381296
+t1365167393
+s863480
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app
-t1365167371
+t1365168009
 s102
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist
@@ -4511,8 +4511,8 @@ t1364483723
 s1463
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample
-t1365167371
-s3107596
+t1365167394
+s3214876
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/PkgInfo
 t1364483723
@@ -4559,7 +4559,7 @@ t1364483723
 s4890
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/assets
-t1364489495
+t1365168009
 s612
 
 N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/rocket.py
@@ -4635,7 +4635,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies77f671a0040fb741^721a72a0040fb741^---0#1#0#--18"Check dependencies36"C61BBA80-9BFA-44FB-B2EF-FF6AC0A542F3-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesb16e1c1d070fb741^5b951c1d070fb741^---0#1#0#--18"Check dependencies36"84818D1C-D6DC-40C2-9933-930CA36E64A3-
 
 CCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/i386/BasicSampleApp.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s386859676.303952
@@ -4780,13 +4780,13 @@ x./build/Debug/BasicSample.app/Contents/Resources/rocket.py
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy ./build/Debug/BasicSample.app/Contents/Resources/rocket.py7bbca40b9604b741^db4fa60b9604b741^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/rocket.py000000000080d041^494"CpResource ../../../bin/rocket.py ./build/Debug/BasicSample.app/Contents/Resources/rocket.py    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../bin/rocket.py /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"217C5574-4E62-49E3-9E8D-C4DE7C63DCFA-
 
 CCpResource ../assets ./build/Debug/BasicSample.app/Contents/Resources/assets
-s386182295.285181
-e386182295.291326
+s386860829.134079
+e386860829.138782
 r1
 xCpResource
 x../assets
 x./build/Debug/BasicSample.app/Contents/Resources/assets
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy ./build/Debug/BasicSample.app/Contents/Resources/assets780e4997ac04b741^53954a97ac04b741^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/assets/0000000000000000^465"CpResource ../assets ./build/Debug/BasicSample.app/Contents/Resources/assets    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../assets /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"A3524613-93E1-4A4B-9C81-563B3F6B7DE0-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy ./build/Debug/BasicSample.app/Contents/Resources/assets925c221d070fb741^9c87231d070fb741^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/assets/0000000000000000^465"CpResource ../assets ./build/Debug/BasicSample.app/Contents/Resources/assets    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../assets /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"C9617924-4ACE-48F7-98C0-1590AF677A22-
 
 CCpResource ../resources/CinderApp.icns ./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns
 s386176523.643276
@@ -4859,10 +4859,10 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile BasicSample_Prefix.pch768aad0b9604b741^ce8abc0e9604b741^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/BasicSample_Prefix.pch0000000000000000^3197"ProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/i386 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug --serialize-diagnostics /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/BasicSample_Prefix.pch -o /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ejsiypdatewegifzazlaxycgndrm/BasicSample_Prefix.pch.d36"53C01146-9F41-41A4-BBE6-64BD5E8FA8E5-
 
 CTouch /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app
-s386860194.403580
-e386860194.407837
+s386860829.168302
+e386860829.172609
 r1
 xTouch
 x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Touch /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app705b67a2040fb741^456868a2040fb741^---0#0#0#--235"Touch ./build/Debug/BasicSample.app    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    /usr/bin/touch -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app36"677EE71B-16D4-4307-80A3-2E4DBABFE015-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Touch /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.appf31e2b1d070fb741^6e302c1d070fb741^---0#0#0#--235"Touch ./build/Debug/BasicSample.app    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    /usr/bin/touch -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app36"FB3D787C-6146-49EA-9573-E5F06917C32A-
 

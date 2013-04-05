@@ -19,8 +19,6 @@ body.window
 	max-height: 700px;
 }
 
-
-
 div#title_bar
 {
 	z-index: 1;
