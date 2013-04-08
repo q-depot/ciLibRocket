@@ -27,6 +27,7 @@
 		107B15BD17047F3E00653E2F /* libRocketDebugger.1.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 107B159717047F3D00653E2F /* libRocketDebugger.1.2.1.dylib */; };
 		107B15CE170485B900653E2F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 107B15CD170485B900653E2F /* assets */; };
 		107B16041704997600653E2F /* ciLibRocketRenderInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 107B16031704997600653E2F /* ciLibRocketRenderInterface.cpp */; };
+		10BAF5D31711EEC60047F4DA /* ciLibRocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10BAF5D21711EEC60047F4DA /* ciLibRocket.cpp */; };
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		8C91BCC4C3034C02A6B5D331 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = CE7CE7D119E148A69AB6CABF /* CinderApp.icns */; };
@@ -159,6 +160,8 @@
 		107B16001704994B00653E2F /* ciLibRocketRenderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ciLibRocketRenderInterface.h; sourceTree = "<group>"; };
 		107B16011704994B00653E2F /* ciLibRocketSystemInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ciLibRocketSystemInterface.h; sourceTree = "<group>"; };
 		107B16031704997600653E2F /* ciLibRocketRenderInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ciLibRocketRenderInterface.cpp; sourceTree = "<group>"; };
+		10BAF5D11711E4900047F4DA /* ciLibRocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ciLibRocket.h; sourceTree = "<group>"; };
+		10BAF5D21711EEC60047F4DA /* ciLibRocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ciLibRocket.cpp; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
@@ -423,6 +426,8 @@
 		107B15FE1704994B00653E2F /* src */ = {
 			isa = PBXGroup;
 			children = (
+				10BAF5D21711EEC60047F4DA /* ciLibRocket.cpp */,
+				10BAF5D11711E4900047F4DA /* ciLibRocket.h */,
 				107B16031704997600653E2F /* ciLibRocketRenderInterface.cpp */,
 				107B16001704994B00653E2F /* ciLibRocketRenderInterface.h */,
 				107B16011704994B00653E2F /* ciLibRocketSystemInterface.h */,
@@ -553,6 +558,7 @@
 			files = (
 				FAF137A8939347488E7D000C /* BasicSampleApp.cpp in Sources */,
 				107B16041704997600653E2F /* ciLibRocketRenderInterface.cpp in Sources */,
+				10BAF5D31711EEC60047F4DA /* ciLibRocket.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

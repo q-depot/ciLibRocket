@@ -147,8 +147,8 @@ input.submit
 	text-align: center;
 	tab-index: auto;
 
-	background-decorator: image;
-	background-image: invader.tga 247px 0px 406px 45px;
+/*	background-decorator: image;
+	background-image: invader.tga 247px 0px 406px 45px; */
 }
 
 button:focus,
