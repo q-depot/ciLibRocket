@@ -15,6 +15,7 @@ class BasicSampleApp : public AppNative {
 	void setup();
 	void update();
 	void draw();
+    void keyDown( KeyEvent event );
     
     ciLibRocket                 mRocket;
 };
@@ -41,6 +42,17 @@ void BasicSampleApp::draw()
     
     mRocket.render();
 }
+
+
+void BasicSampleApp::keyDown( KeyEvent event )
+{
+    char c = event.getChar();
+    
+    if ( c == 'd' )
+        mRocket.toggleDebugger();
+    
+}
+
 
 CINDER_APP_NATIVE( BasicSampleApp, RendererGl )
 

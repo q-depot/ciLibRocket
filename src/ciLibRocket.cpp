@@ -1,8 +1,8 @@
 
 
 #include "ciLibRocket.h"
+#include "ciLibRocketElementInstancer.h"
 
-//#include "ciLibRocketSlider.h"
 
 using namespace ci;
 using namespace ci::app;
@@ -52,11 +52,12 @@ void ciLibRocket::setup()
 	registerCallbacks();
 }
 
+
 void ciLibRocket::registerCallbacks()
 {
     ci::app::WindowRef window = app::App::get()->getWindow();
-    
-	mCbMouseDown    = window->getSignalMouseDown().connect( std::bind( &ciLibRocket::mouseDown, this, std::_1 ) );
+	
+    mCbMouseDown    = window->getSignalMouseDown().connect( std::bind( &ciLibRocket::mouseDown, this, std::_1 ) );
 	mCbMouseUp      = window->getSignalMouseUp().connect( std::bind( &ciLibRocket::mouseUp, this, std::_1 ) );
 	mCbMouseDrag    = window->getSignalMouseDrag().connect( std::bind( &ciLibRocket::mouseDrag, this, std::_1 ) );
 	mCbMouseMove    = window->getSignalMouseMove().connect( std::bind( &ciLibRocket::mouseMove, this, std::_1 ) );
@@ -64,21 +65,21 @@ void ciLibRocket::registerCallbacks()
 	mCbKeyDown      = window->getSignalKeyDown().connect( std::bind( &ciLibRocket::keyDown, this, std::_1 ) );
 	mCbKeyUp        = window->getSignalKeyUp().connect( std::bind( &ciLibRocket::keyUp, this, std::_1 ) );
     mCbResize       = window->getSignalResize().connect( std::bind( &ciLibRocket::resize, this ) );
-    
-//    ofAddListener(ofEvents().windowResized, this, &ciLibRocket::resize);
 }
+
 
 void ciLibRocket::unregisterCallbacks()
 {
     mCbMouseDown.disconnect();
-	mCbMouseUp.disconnect();
-	mCbMouseDrag.disconnect();
-	mCbMouseMove.disconnect();
-	mCbMouseWheel.disconnect();
-	mCbKeyDown.disconnect();
-	mCbKeyUp.disconnect();
-   	mCbResize.disconnect();
+    mCbMouseUp.disconnect();
+    mCbMouseDrag.disconnect();
+    mCbMouseMove.disconnect();
+    mCbMouseWheel.disconnect();
+    mCbKeyDown.disconnect();
+    mCbKeyUp.disconnect();
+    mCbResize.disconnect();
 }
+
 
 void ciLibRocket::loadDocument( fs::path filePath )
 {
@@ -90,11 +91,13 @@ void ciLibRocket::loadDocument( fs::path filePath )
 	}
 }
 
+
 bool ciLibRocket::mouseDown( MouseEvent event )
 {        
  	mContext->ProcessMouseButtonDown( getMouseButton( event ), getKeyModifier( event ) );
     return false;
 }
+
 
 
 bool ciLibRocket::mouseUp( MouseEvent event )
@@ -177,152 +180,6 @@ int ciLibRocket::getMouseButton( MouseEvent event )
 
 
 
-
-
-
-//void ciLibRocket::OnDocumentLoad(ElementDocument* document)
-//{
-//	/*if(rocketDocuments.find(document) != rocketDocuments.end())
-//     return;
-//     
-//     ciLibRocketDocument* doc =  new ciLibRocketDocument(document);
-//     rocketDocuments[document] = doc;*/
-//}
-//
-//void ciLibRocket::OnElementCreate(Rocket::Core::Element* element)
-//{
-//	/*
-//     ciLibRocketDocument* doc = getDocumentFromRocket(element->GetOwnerDocument());
-//     ciLibRocketElement* el = new ciLibRocketElement(element);
-//     doc->addElement(el);
-//     */
-//}
-//
-//ciLibRocketDocument* ciLibRocket::getDocumentFromRocket(Rocket::Core::ElementDocument* doc)
-//{
-//	if(rocketDocuments.find(doc) != rocketDocuments.end()){
-//		return rocketDocuments[doc];
-//	}else{
-//		rocketDocuments[doc] = new ciLibRocketDocument(doc);
-//		return rocketDocuments[doc];
-//	}
-//	return NULL;
-//}
-//
-//void ciLibRocket::toggleDebugger()
-//{
-//	Rocket::Debugger::SetVisible(!Rocket::Debugger::IsVisible());
-//}
-//
-//void ciLibRocket::hideDebugger()
-//{
-//	Rocket::Debugger::SetVisible(false);
-//}
-//
-//void ciLibRocket::showDebugger()
-//{
-//	Rocket::Debugger::SetVisible(true);
-//}
-//
-//void ciLibRocket::update()
-//{
-//	context->Update();
-//}
-//
-//void ciLibRocket::draw()
-//{
-//	ofEnableAlphaBlending();
-//	context->Render();
-//	ofDisableAlphaBlending();
-//}
-//
-//void ciLibRocket::mouseMoved(int x, int y)
-//{
-//	context->ProcessMouseMove(x, y, getKeyModifier());
-//}
-//
-//void ciLibRocket::mousePressed(int x, int y, int button)
-//{
-//	context->ProcessMouseButtonDown(button, getKeyModifier());
-//}
-//
-//void ciLibRocket::mouseDragged(int x, int y, int button)
-//{
-//	context->ProcessMouseMove(x, y, getKeyModifier());
-//}
-//
-//void ciLibRocket::mouseReleased(int x, int y, int button)
-//{
-//	context->ProcessMouseButtonUp(button, getKeyModifier());
-//}
-//
-//void ciLibRocket::scrolled(float deltaX, float deltaY)
-//{
-//	context->ProcessMouseWheel(-deltaY, getKeyModifier());
-//}
-//
-//void ciLibRocket::keyPressed(int key)
-//{
-//	if(key < OFX_LIBROCKET_MAX_KEYS)
-//		keyState[key] = true;
-//	Rocket::Core::Input::KeyIdentifier key_identifier = key_identifier_map[key];
-//	if (key_identifier != Rocket::Core::Input::KI_UNKNOWN)
-//		context->ProcessKeyDown(key_identifier, 0);
-//	if(key != OF_KEY_BACKSPACE && key != OF_KEY_DEL && key != OF_KEY_LEFT && key != OF_KEY_RIGHT && key != OF_KEY_DOWN && key != OF_KEY_UP && key != OF_KEY_RETURN)
-//		context->ProcessTextInput(key);
-//}
-//
-//void ciLibRocket::keyReleased(int key)
-//{
-//	if(key < OFX_LIBROCKET_MAX_KEYS)
-//		keyState[key] = false;
-//	Rocket::Core::Input::KeyIdentifier key_identifier = key_identifier_map[key];
-//	context->ProcessKeyUp(key_identifier, getKeyModifier());
-//}
-//
-//void ciLibRocket::resize(int w, int h)
-//{
-//	context->SetDimensions(Vector2i(w, h));
-//}
-//
-
-//void ciLibRocket::keyPressed(ofKeyEventArgs& e)
-//{
-//	keyPressed(e.key);
-//}
-//
-//void ciLibRocket::keyReleased(ofKeyEventArgs& e)
-//{
-//	keyReleased(e.key);
-//}
-//
-//
-//void ciLibRocket::mouseDragged(ofMouseEventArgs& e)
-//{
-//	mouseDragged(e.x, e.y, e.button);
-//}
-//
-//void ciLibRocket::mouseMoved(ofMouseEventArgs& e)
-//{
-//	mouseMoved(e.x, e.y);
-//}
-//
-//void ciLibRocket::mousePressed(ofMouseEventArgs& e)
-//{
-//	mousePressed(e.x, e.y, e.button);
-//}
-//
-//void ciLibRocket::mouseReleased(ofMouseEventArgs& e)
-//{
-//	mouseReleased(e.x, e.y, e.button);
-//}
-//
-//void ciLibRocket::resize(ofResizeEventArgs& e)
-//{
-//	resize(e.width, e.height);
-//}
-//
-//
 //void ciLibRocket::initialiseKeyMap()
 //{
 //	memset(key_identifier_map, sizeof(key_identifier_map), 0);
@@ -426,23 +283,3 @@ int ciLibRocket::getMouseButton( MouseEvent event )
 //	key_identifier_map[OF_KEY_UP] = Rocket::Core::Input::KI_UP;
 //}
 //
-//int ciLibRocket::getKeyModifier()
-//{
-//	int key_modifier_state = 0;
-//    
-//	/*if (keyState[OF_KEY_SHIFT])
-//     key_modifier_state |= Rocket::Core::Input::KM_SHIFT;
-//     */
-//	/*if (keyState[OF_KEY_])
-//     key_modifier_state |= Rocket::Core::Input::KM_CAPSLOCK;*/
-//    
-//	if (keyState[OF_KEY_CTRL])
-//		key_modifier_state |= Rocket::Core::Input::KM_CTRL;
-//    
-//	if (keyState[OF_KEY_ALT])
-//		key_modifier_state |= Rocket::Core::Input::KM_ALT;
-//    
-//	/*if (x_state & Mod2Mask)
-//     key_modifier_state |= Rocket::Core::Input::KM_NUMLOCK;*/
-//	return key_modifier_state;
-//}

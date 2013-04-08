@@ -35,50 +35,11 @@ public:
 
 	void unregisterCallbacks();
     
-    /*
+    void toggleDebugger()   { Rocket::Debugger::SetVisible( !Rocket::Debugger::IsVisible() ); }
+    void hideDebugger()     { Rocket::Debugger::SetVisible(false); }
+    void showDebugger()     { Rocket::Debugger::SetVisible(true); }
 
-	void update(ofEventArgs& e);
-	void update();
-	void draw(ofEventArgs& e);
 
-    
-	//always load font before calling setup
-	void loadFont(string file);
-	
-
-	
-	void keyPressed( ofKeyEventArgs& e);
-	void keyReleased( ofKeyEventArgs& e);
-	void mouseMoved( ofMouseEventArgs& e);
-	void mouseDragged( ofMouseEventArgs& e);
-	void mousePressed( ofMouseEventArgs& e);
-	void mouseReleased( ofMouseEventArgs& e);
-	void resize( ofResizeEventArgs& e);
-    
-	void keyPressed  (int key);
-	void keyReleased(int key);
-	void mouseMoved(int x, int y );
-	void mouseDragged(int x, int y, int button);
-	void mousePressed(int x, int y, int button);
-	void mouseReleased(int x, int y, int button);
-	void scrolled(float deltaX, float deltaY);
-    
-	void resize(int w, int h);
-    
-	
-	void initialiseKeyMap();
-	
-	void toggleDebugger();
-	void showDebugger();
-	void hideDebugger();
-	
-	template <class T>
-	void addCustomElement(string tagName){
-		ciLibRocketCustomElementHandler::addCustomElement<T>(tagName);
-	}
-	
-	static ciLibRocketDocument* getDocumentFromRocket(Rocket::Core::ElementDocument* doc);
-	*/
 private:
     
     bool mouseDown( ci::app::MouseEvent event );
@@ -93,25 +54,13 @@ private:
     int getKeyModifier( ci::app::MouseEvent event );
     int getMouseButton( ci::app::MouseEvent event );
 
-
-    /*
-	void OnDocumentLoad(Rocket::Core::ElementDocument* document);
-	void OnElementCreate(Rocket::Core::Element* element);
-	
-    
-	int getKeyModifier();
-	bool keyState[OFX_LIBROCKET_MAX_KEYS];
-    
-	static std::map<Rocket::Core::ElementDocument*, ciLibRocketDocument*> rocketDocuments;
-    */
     
     ciLibRocketRenderInterface  mRenderer;
     ciLibRocketSystemInterface  mSystemInterface;
     
     Rocket::Core::Context           *mContext;
     Rocket::Core::ElementDocument   *mDocument;
-    
-    //    app::App *mApp;
+
     ci::signals::scoped_connection  mCbMouseDown, mCbMouseDrag, mCbMouseUp, mCbMouseMove, mCbMouseWheel;
     ci::signals::scoped_connection  mCbKeyDown, mCbKeyUp;
     ci::signals::scoped_connection  mCbResize;
