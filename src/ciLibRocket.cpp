@@ -50,6 +50,20 @@ void ciLibRocket::setup()
     Rocket::Core::RegisterPlugin(this);
   
 	registerCallbacks();
+    
+    
+    
+//    Rocket::Core::ElementInstancer* pInstancer = new Rocket::Core::ElementInstancerGeneric< ciLibRocketSlider >();
+//    Rocket::Core::Factory::RegisterElementInstancer( "pwr", pInstancer );
+//    pInstancer->RemoveReference();
+    
+//    Rocket::Core::ElementInstancer* custom_instancer = new ciLibRocketElementInstancer<ciLibRocketSlider>();
+//    Rocket::Core::Factory::RegisterElementInstancer("custom", custom_instancer);
+//    custom_instancer->RemoveReference();
+
+    Rocket::Core::ElementInstancer* custom_instancer = new Rocket::Core::ElementInstancerGeneric< ciLibRocketSlider >();
+    Rocket::Core::Factory::RegisterElementInstancer("custom", custom_instancer);
+    custom_instancer->RemoveReference();
 }
 
 

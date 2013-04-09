@@ -95,4 +95,5 @@ dependencies: \
   ../../../../../blocks/ciLibRocket/include/Rocket/Controls/SelectOption.h \
   ../../../../../blocks/ciLibRocket/include/Rocket/Controls/ElementFormControlInput.h \
   ../../../../../blocks/ciLibRocket/include/Rocket/Controls/ElementFormControlTextArea.h \
-  ../../../../../blocks/ciLibRocket/include/Rocket/Controls/ElementTabSet.h
+  ../../../../../blocks/ciLibRocket/include/Rocket/Controls/ElementTabSet.h \
+  ../../../../../blocks/ciLibRocket/src/ciLibRocketSlider.h

@@ -12,7 +12,7 @@
 #include <Rocket/Controls.h>
 //#include "ciLibRocketslider2d.h"
 //#include "ciLibRocketVideo.h"
-//#include "ciLibRocketCustomElement.h"
+#include "ciLibRocketSlider.h"
 
 
 class ciLibRocket : public Rocket::Core::Plugin {

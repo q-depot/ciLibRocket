@@ -163,6 +163,7 @@
 		10A30ABD1712DB29009F5103 /* ciLibRocketElementInstancer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ciLibRocketElementInstancer.h; sourceTree = "<group>"; };
 		10BAF5D11711E4900047F4DA /* ciLibRocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ciLibRocket.h; sourceTree = "<group>"; };
 		10BAF5D21711EEC60047F4DA /* ciLibRocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ciLibRocket.cpp; sourceTree = "<group>"; };
+		10D1012517140EE300208E5B /* ciLibRocketSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ciLibRocketSlider.h; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
@@ -433,6 +434,7 @@
 				107B16001704994B00653E2F /* ciLibRocketRenderInterface.h */,
 				107B16011704994B00653E2F /* ciLibRocketSystemInterface.h */,
 				10A30ABD1712DB29009F5103 /* ciLibRocketElementInstancer.h */,
+				10D1012517140EE300208E5B /* ciLibRocketSlider.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
