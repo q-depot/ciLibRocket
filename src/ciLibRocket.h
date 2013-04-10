@@ -14,7 +14,6 @@
 //#include "ciLibRocketVideo.h"
 #include "ciLibRocketSlider.h"
 
-
 class ciLibRocket : public Rocket::Core::Plugin {
     
 public:
@@ -51,10 +50,10 @@ private:
     bool keyUp( ci::app::KeyEvent event );
     void resize();
     
-    int getKeyModifier( ci::app::MouseEvent event );
     int getMouseButton( ci::app::MouseEvent event );
-
-    
+    void initKeyMap();
+    Rocket::Core::word getCharacterCode(Rocket::Core::Input::KeyIdentifier key_identifier, int key_modifier_state);
+  
     ciLibRocketRenderInterface  mRenderer;
     ciLibRocketSystemInterface  mSystemInterface;
     
@@ -64,6 +63,9 @@ private:
     ci::signals::scoped_connection  mCbMouseDown, mCbMouseDrag, mCbMouseUp, mCbMouseMove, mCbMouseWheel;
     ci::signals::scoped_connection  mCbKeyDown, mCbKeyUp;
     ci::signals::scoped_connection  mCbResize;
+  
+    std::map<int, Rocket::Core::Input::KeyIdentifier> mCinderKeyToRocket;
+
 };
 
 
