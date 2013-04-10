@@ -48,8 +48,11 @@ void BasicSampleApp::keyDown( KeyEvent event )
 {
     char c = event.getChar();
     
-    if ( c == 'd' )
-        mRocket.toggleDebugger();
+    if ( event.isAltDown() )
+    {
+        if ( c == 'd' )
+            mRocket.toggleDebugger();
+    }
     
 }
 
