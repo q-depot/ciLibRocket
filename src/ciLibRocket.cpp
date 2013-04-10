@@ -23,6 +23,10 @@ void ciLibRocket::setup()
     Rocket::Core::Initialise();
     Rocket::Controls::Initialise();
     
+    Rocket::Core::ElementInstancer* custom_instancer = new Rocket::Core::ElementInstancerGeneric< ciLibRocketSlider >();
+    Rocket::Core::Factory::RegisterElementInstancer( "slider", custom_instancer );
+    custom_instancer->RemoveReference();
+    
     mContext = NULL;
     mContext = Rocket::Core::CreateContext( "main", Rocket::Core::Vector2i( 1024, 768 ) );
 
@@ -35,35 +39,13 @@ void ciLibRocket::setup()
     
 	Rocket::Debugger::Initialise( mContext );
     
-    Rocket::Core::String font_names[4];
-    font_names[0] = getAssetPath( "Delicious-Roman.otf" ).generic_string().c_str();
-    font_names[1] = getAssetPath( "Delicious-Italic.otf" ).generic_string().c_str();
-    font_names[2] = getAssetPath( "Delicious-Bold.otf" ).generic_string().c_str();
-    font_names[3] = getAssetPath( "Delicious-BoldItalic.otf" ).generic_string().c_str();
-    for (int i = 0; i < sizeof(font_names) / sizeof(Rocket::Core::String); i++)
-        Rocket::Core::FontDatabase::LoadFontFace( font_names[i] );
-    
+    Rocket::Core::FontDatabase::LoadFontFace( getAssetPath( "Delicious-Roman.otf" ).generic_string().c_str() );
     
     loadDocument( getAssetPath( "test01.rml" ) );
-    
     
     Rocket::Core::RegisterPlugin(this);
   
 	registerCallbacks();
-    
-    
-    
-//    Rocket::Core::ElementInstancer* pInstancer = new Rocket::Core::ElementInstancerGeneric< ciLibRocketSlider >();
-//    Rocket::Core::Factory::RegisterElementInstancer( "pwr", pInstancer );
-//    pInstancer->RemoveReference();
-    
-//    Rocket::Core::ElementInstancer* custom_instancer = new ciLibRocketElementInstancer<ciLibRocketSlider>();
-//    Rocket::Core::Factory::RegisterElementInstancer("custom", custom_instancer);
-//    custom_instancer->RemoveReference();
-
-    Rocket::Core::ElementInstancer* custom_instancer = new Rocket::Core::ElementInstancerGeneric< ciLibRocketSlider >();
-    Rocket::Core::Factory::RegisterElementInstancer("custom", custom_instancer);
-    custom_instancer->RemoveReference();
 }
 
 
