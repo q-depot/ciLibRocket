@@ -1,562 +1,0 @@
-TBasicSample
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist Info.plist
-cCpResource ../../../bin/rocket.py ./build/Debug/BasicSample.app/Contents/Resources/rocket.py
-cCpResource ../resources/CinderApp.icns ./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns
-cCpResource ../../../Include/Rocket/Core/Colour.inl ./build/Debug/BasicSample.app/Contents/Resources/Colour.inl
-cCpResource ../../../Include/Rocket/Core/Dictionary.inl ./build/Debug/BasicSample.app/Contents/Resources/Dictionary.inl
-cCpResource ../../../Include/Rocket/Core/Element.inl ./build/Debug/BasicSample.app/Contents/Resources/Element.inl
-cCpResource ../../../Include/Rocket/Core/Pool.inl ./build/Debug/BasicSample.app/Contents/Resources/Pool.inl
-cCpResource ../../../Include/Rocket/Core/ElementInstancerGeneric.inl ./build/Debug/BasicSample.app/Contents/Resources/ElementInstancerGeneric.inl
-cCpResource ../../../Include/Rocket/Core/StringBase.inl ./build/Debug/BasicSample.app/Contents/Resources/StringBase.inl
-cCpResource ../../../Include/Rocket/Core/TypeConverter.inl ./build/Debug/BasicSample.app/Contents/Resources/TypeConverter.inl
-cCpResource ../../../Include/Rocket/Core/Variant.inl ./build/Debug/BasicSample.app/Contents/Resources/Variant.inl
-cCpResource ../../../Include/Rocket/Core/Vector2.inl ./build/Debug/BasicSample.app/Contents/Resources/Vector2.inl
-cCpResource ../assets ./build/Debug/BasicSample.app/Contents/Resources/assets
-cProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocket.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
-c00000000503F1B7700000000000000AA
-t1346313079
-s170
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
-c0000000050AA879700000000000024F0
-t1353353111
-s9456
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c0000000050AA87970000000000024D90
-t1353353111
-s150928
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
-c0000000050AA879700000000000060B4
-t1353353111
-s24756
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000050AA879700000000000001E5
-t1353353111
-s485
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
-c0000000050AA8797000000000000E920
-t1353353111
-s59680
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c0000000050A680A30000000000006730
-t1353089187
-s26416
-
-N/System/Library/Frameworks/CoreVideo.framework/CoreVideo
-c0000000050A680A60000000000081CB0
-t1353089190
-s531632
-
-N/System/Library/Frameworks/OpenGL.framework/OpenGL
-c0000000050A680AF000000000002DAF0
-t1353089199
-s187120
-
-N/System/Library/Frameworks/QTKit.framework/QTKit
-c0000000050A680B300000000004A2D90
-t1353089203
-s4861328
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Colour.inl
-c0000000051543667000000000000121A
-t1364473447
-s4634
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Dictionary.inl
-c000000005154366700000000000007D3
-t1364473447
-s2003
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Element.inl
-c000000005154366700000000000008EC
-t1364473447
-s2284
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/ElementInstancerGeneric.inl
-c00000000515436670000000000000746
-t1364473447
-s1862
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Pool.inl
-c000000005154366700000000000018C7
-t1364473447
-s6343
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/StringBase.inl
-c0000000051543667000000000000427D
-t1364473447
-s17021
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/TypeConverter.inl
-c000000005154366700000000000021E6
-t1364473447
-s8678
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Variant.inl
-c00000000515436670000000000000ABD
-t1364473447
-s2749
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Vector2.inl
-c0000000051543667000000000000131A
-t1364473447
-s4890
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../bin/rocket.py
-c00000000515436670000000000000058
-t1364473447
-s88
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../lib/libRocketControls.1.2.1.dylib
-c000000005154474A00000000000C83D0
-t1364477770
-s820176
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../lib/libRocketCore.1.2.1.dylib
-c0000000051544743000000000021EC74
-t1364477763
-s2223220
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../lib/libRocketDebugger.1.2.1.dylib
-c0000000051544746000000000007B448
-t1364477766
-s504904
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp
-c0000000051628B5A0000000000003FB0
-t1365412698
-s16304
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp
-c00000000515ECD200000000000002260
-t1365167392
-s8800
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../assets
-c00000000516287E200000000000004C8
-t1365411810
-s1224
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../resources/CinderApp.icns
-c0000000051543E050000000000070375
-t1364475397
-s459637
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp
-c00000000516287E200000000000002CB
-t1365411810
-s715
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSample.LinkFileList
-c0000000051629A3200000000000001E6
-t1365416498
-s486
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocket.o
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/PkgInfo
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Colour.inl
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Dictionary.inl
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Element.inl
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/ElementInstancerGeneric.inl
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Pool.inl
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/StringBase.inl
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/TypeConverter.inl
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Variant.inl
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Vector2.inl
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/assets
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/rocket.py
-t2
-s0
-
-N/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/BasicSample_Prefix.pch
-c0000000051543E05000000000000012D
-t1364475397
-s301
-i<Cocoa/Cocoa.h>
-i"cinder/Cinder.h"
-i"cinder/app/AppBasic.h"
-i"cinder/gl/gl.h"
-i"cinder/CinderMath.h"
-i"cinder/Matrix.h"
-i"cinder/Vector.h"
-i"cinder/Quaternion.h"
-
-N/Users/Q/Code/Cinder_DEV/include/cinder/Cinder.h
-c00000000516298E40000000000000C19
-t1365416164
-s3097
-
-N/Users/Q/Code/Cinder_DEV/include/cinder/CinderMath.h
-c00000000516298E40000000000001F9E
-t1365416164
-s8094
-
-N/Users/Q/Code/Cinder_DEV/include/cinder/Matrix.h
-c00000000516298E40000000000000EDD
-t1365416164
-s3805
-
-N/Users/Q/Code/Cinder_DEV/include/cinder/Quaternion.h
-c00000000516298E40000000000005499
-t1365416164
-s21657
-
-N/Users/Q/Code/Cinder_DEV/include/cinder/Vector.h
-c00000000516298E4000000000000AD7C
-t1365416164
-s44412
-
-N/Users/Q/Code/Cinder_DEV/include/cinder/app/AppBasic.h
-c00000000516298E40000000000002453
-t1365416164
-s9299
-
-N/Users/Q/Code/Cinder_DEV/include/cinder/gl/gl.h
-c00000000516298E40000000000006469
-t1365416164
-s25705
-
-N/var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth
-t2
-s0
-
-NInfo.plist
-c0000000051543E050000000000000462
-t1364475397
-s1122
-
-CBuild AST from /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp
-r0
-
-CBuild AST from /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp
-r0
-
-CBuild AST from /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies63d4e1b2d112b741^9142edb2d112b741^---0#1#0#--18"Check dependencies36"3AE772E0-A328-4D28-81B5-90003271F427-
-
-CCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s387109302.198402
-e387109304.482045
-r0
-xCompileC
-x./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o
-x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp:5:
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.h:91:27: error: no type named 'ResizeEvent' in namespace 'cinder::app'
-o    bool resize( ci::app::ResizeEvent event );
-o                 ~~~~~~~~~^
-o1 error generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cppfcde32b6d112b741^7c647bb8d112b741^-381"In file included from /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp:5:/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.h:91:27: error: no type named 'ResizeEvent' in namespace 'cinder::app'    bool resize( ci::app::ResizeEvent event );                 ~~~~~~~~~^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@54"No type named 'ResizeEvent' in namespace 'cinder::app'-387109304#18446744073709551615#0#1(2@120"In file included from /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp:5:-387109304#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@102"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/src/BasicSampleApp.cpp0000000000000000^4#9#4#9#71#0#21"Clang LLVM 1.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@77"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.h0000000000000000^90#26#90#26#2173#0#14"Semantic Issue1(3@77"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.h0000000000000000^90#17#90#26#2164#7#-0#0#0#-19%DVTDocumentLocation4@111"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp0000000000000000^3266"CompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o ../src/BasicSampleApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/x86_64 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -include /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch -MMD -MT dependencies -MF /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.d --serialize-diagnostics /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../src/BasicSampleApp.cpp -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/BasicSampleApp.o36"7A4DD1D7-BF91-4C29-A2A3-C37FB8FF4CF6-
-
-CCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocket.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s387109302.198421
-e387109304.483858
-r0
-xCompileC
-x./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocket.o
-x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:3:
-o../../../../../blocks/ciLibRocket/src/ciLibRocket.h:91:27: error: no type named 'ResizeEvent' in namespace 'cinder::app'
-o    bool resize( ci::app::ResizeEvent event );
-o                 ~~~~~~~~~^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:12:14: error: exception specification in declaration does not match previous declaration
-ociLibRocket::~ciLibRocket()
-o             ^
-o../../../../../blocks/ciLibRocket/src/ciLibRocket.h:24:2: note: previous declaration is here
-o        ~ciLibRocket();
-o        ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:59:28: error: no member named 'registerMouseDown' in 'cinder::app::App'
-o    mCbMouseDown    = app->registerMouseDown( this, &ciLibRocket::mouseDown );
-o                      ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:60:25: error: no member named 'registerMouseUp' in 'cinder::app::App'
-o        mCbMouseUp      = app->registerMouseUp( this, &ciLibRocket::mouseUp );
-o                          ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:61:25: error: no member named 'registerMouseDrag' in 'cinder::app::App'
-o        mCbMouseDrag    = app->registerMouseDrag( this, &ciLibRocket::mouseDrag );
-o                          ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:62:25: error: no member named 'registerMouseMove' in 'cinder::app::App'
-o        mCbMouseMove    = app->registerMouseMove( this, &ciLibRocket::mouseMove );
-o                          ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:63:25: error: no member named 'registerMouseWheel' in 'cinder::app::App'
-o        mCbMouseWheel   = app->registerMouseWheel( this, &ciLibRocket::mouseWheel );
-o                          ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:64:25: error: no member named 'registerKeyDown' in 'cinder::app::App'
-o        mCbKeyDown      = app->registerKeyDown( this, &ciLibRocket::keyDown );
-o                          ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:65:25: error: no member named 'registerKeyUp' in 'cinder::app::App'
-o        mCbKeyUp        = app->registerKeyUp( this, &ciLibRocket::keyUp );
-o                          ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:66:28: error: no member named 'registerResize' in 'cinder::app::App'
-o    mCbResize       = app->registerResize( this, &ciLibRocket::resize );
-o                      ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:83:10: error: no member named 'unregisterMouseDown' in 'cinder::app::App'
-o    app->unregisterMouseDown( mCbMouseDown );
-o    ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:84:10: error: no member named 'unregisterMouseUp' in 'cinder::app::App'
-o    app->unregisterMouseUp( mCbMouseUp );
-o    ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:85:10: error: no member named 'unregisterMouseDrag' in 'cinder::app::App'
-o    app->unregisterMouseDrag( mCbMouseDrag );
-o    ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:86:10: error: no member named 'unregisterMouseMove' in 'cinder::app::App'
-o    app->unregisterMouseMove( mCbMouseMove );
-o    ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:87:10: error: no member named 'unregisterMouseWheel' in 'cinder::app::App'
-o    app->unregisterMouseWheel( mCbMouseWheel );
-o    ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:88:10: error: no member named 'unregisterKeyDown' in 'cinder::app::App'
-o    app->unregisterKeyDown( mCbKeyDown );
-o    ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:89:10: error: no member named 'unregisterKeyUp' in 'cinder::app::App'
-o    app->unregisterKeyUp( mCbKeyUp );
-o    ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:90:10: error: no member named 'unregisterResize' in 'cinder::app::App'
-o    app->unregisterResize( mCbResize );
-o    ~~~  ^
-o/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:173:19: error: redefinition of 'resize' as different kind of symbol
-obool ciLibRocket::resize( ResizeEvent event )
-o                  ^
-o../../../../../blocks/ciLibRocket/src/ciLibRocket.h:91:10: note: previous definition is here
-o    bool resize( ci::app::ResizeEvent event );
-o         ^
-ofatal error: too many errors emitted, stopping now [-ferror-limit=]
-o20 errors generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp64e632b6d112b741^badd7bb8d112b741^-5211"In file included from /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:3:../../../../../blocks/ciLibRocket/src/ciLibRocket.h:91:27: error: no type named 'ResizeEvent' in namespace 'cinder::app'    bool resize( ci::app::ResizeEvent event );                 ~~~~~~~~~^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:12:14: error: exception specification in declaration does not match previous declarationciLibRocket::~ciLibRocket()             ^../../../../../blocks/ciLibRocket/src/ciLibRocket.h:24:2: note: previous declaration is here        ~ciLibRocket();        ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:59:28: error: no member named 'registerMouseDown' in 'cinder::app::App'    mCbMouseDown    = app->registerMouseDown( this, &ciLibRocket::mouseDown );                      ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:60:25: error: no member named 'registerMouseUp' in 'cinder::app::App'        mCbMouseUp      = app->registerMouseUp( this, &ciLibRocket::mouseUp );                          ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:61:25: error: no member named 'registerMouseDrag' in 'cinder::app::App'        mCbMouseDrag    = app->registerMouseDrag( this, &ciLibRocket::mouseDrag );                          ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:62:25: error: no member named 'registerMouseMove' in 'cinder::app::App'        mCbMouseMove    = app->registerMouseMove( this, &ciLibRocket::mouseMove );                          ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:63:25: error: no member named 'registerMouseWheel' in 'cinder::app::App'        mCbMouseWheel   = app->registerMouseWheel( this, &ciLibRocket::mouseWheel );                          ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:64:25: error: no member named 'registerKeyDown' in 'cinder::app::App'        mCbKeyDown      = app->registerKeyDown( this, &ciLibRocket::keyDown );                          ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:65:25: error: no member named 'registerKeyUp' in 'cinder::app::App'        mCbKeyUp        = app->registerKeyUp( this, &ciLibRocket::keyUp );                          ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:66:28: error: no member named 'registerResize' in 'cinder::app::App'    mCbResize       = app->registerResize( this, &ciLibRocket::resize );                      ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:83:10: error: no member named 'unregisterMouseDown' in 'cinder::app::App'    app->unregisterMouseDown( mCbMouseDown );    ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:84:10: error: no member named 'unregisterMouseUp' in 'cinder::app::App'    app->unregisterMouseUp( mCbMouseUp );    ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:85:10: error: no member named 'unregisterMouseDrag' in 'cinder::app::App'    app->unregisterMouseDrag( mCbMouseDrag );    ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:86:10: error: no member named 'unregisterMouseMove' in 'cinder::app::App'    app->unregisterMouseMove( mCbMouseMove );    ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:87:10: error: no member named 'unregisterMouseWheel' in 'cinder::app::App'    app->unregisterMouseWheel( mCbMouseWheel );    ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:88:10: error: no member named 'unregisterKeyDown' in 'cinder::app::App'    app->unregisterKeyDown( mCbKeyDown );    ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:89:10: error: no member named 'unregisterKeyUp' in 'cinder::app::App'    app->unregisterKeyUp( mCbKeyUp );    ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:90:10: error: no member named 'unregisterResize' in 'cinder::app::App'    app->unregisterResize( mCbResize );    ~~~  ^/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:173:19: error: redefinition of 'resize' as different kind of symbolbool ciLibRocket::resize( ResizeEvent event )                  ^../../../../../blocks/ciLibRocket/src/ciLibRocket.h:91:10: note: previous definition is here    bool resize( ci::app::ResizeEvent event );         ^fatal error: too many errors emitted, stopping now [-ferror-limit=]20 errors generated.20(36%IDEClangDiagnosticActivityLogMessage2@54"No type named 'ResizeEvent' in namespace 'cinder::app'-387109304#18446744073709551615#0#1(2@123"In file included from /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp:3:-387109304#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^2#9#2#9#11#0#21"Clang LLVM 1.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@77"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.h0000000000000000^90#26#90#26#2173#0#14"Semantic Issue1(3@77"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.h0000000000000000^90#17#90#26#2164#7#-2@74"Exception specification in declaration does not match previous declaration-387109304#18446744073709551615#0#1(2@28"Previous declaration is here-387109304#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@77"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.h0000000000000000^23#1#23#1#477#0#21"Clang LLVM 1.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^11#13#11#13#143#0#14"Semantic Issue--2@57"No member named 'registerMouseDown' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^58#27#58#27#1476#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^58#22#58#25#1471#0#-2@55"No member named 'registerMouseUp' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^59#24#59#24#1552#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^59#19#59#22#1547#0#-2@57"No member named 'registerMouseDrag' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^60#24#60#24#1624#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^60#19#60#22#1619#0#-2@57"No member named 'registerMouseMove' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^61#24#61#24#1700#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^61#19#61#22#1695#0#-2@58"No member named 'registerMouseWheel' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^62#24#62#24#1776#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^62#19#62#22#1771#0#-2@55"No member named 'registerKeyDown' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^63#24#63#24#1854#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^63#19#63#22#1849#0#-2@53"No member named 'registerKeyUp' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^64#24#64#24#1926#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^64#19#64#22#1921#0#-2@54"No member named 'registerResize' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^65#27#65#27#1997#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^65#22#65#25#1992#0#-2@59"No member named 'unregisterMouseDown' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^82#9#82#9#3090#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^82#4#82#7#3085#0#-2@57"No member named 'unregisterMouseUp' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^83#9#83#9#3136#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^83#4#83#7#3131#0#-2@59"No member named 'unregisterMouseDrag' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^84#9#84#9#3178#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^84#4#84#7#3173#0#-2@59"No member named 'unregisterMouseMove' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^85#9#85#9#3224#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^85#4#85#7#3219#0#-2@60"No member named 'unregisterMouseWheel' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^86#9#86#9#3270#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^86#4#86#7#3265#0#-2@57"No member named 'unregisterKeyDown' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^87#9#87#9#3318#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^87#4#87#7#3313#0#-2@55"No member named 'unregisterKeyUp' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^88#9#88#9#3360#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^88#4#88#7#3355#0#-2@56"No member named 'unregisterResize' in 'cinder::app::App'-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^89#9#89#9#3398#0#14"Semantic Issue1(3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^89#4#89#7#3393#0#-2@52"Redefinition of 'resize' as different kind of symbol-387109304#18446744073709551615#0#1(2@27"Previous definition is here-387109304#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@77"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.h0000000000000000^90#9#90#9#2156#0#21"Clang LLVM 1.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@79"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/src/ciLibRocket.cpp0000000000000000^172#18#172#18#5549#0#14"Semantic Issue--2@37"Too many errors emitted, stopping now-387109304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic-20"Clang LLVM 1.0 Error--0#0#0#-19%DVTDocumentLocation4@114"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp0000000000000000^3260"CompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocket.o ../../../src/ciLibRocket.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/x86_64 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -include /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch -MMD -MT dependencies -MF /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocket.d --serialize-diagnostics /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocket.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocket.cpp -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocket.o36"5BC9C2CC-869C-432F-B5B2-3BD965AA2DDE-
-
-CCompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s387109302.198403
-e387109304.030082
-r1
-xCompileC
-x./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o
-x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Compile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cppdbde32b6d112b741^85b307b8d112b741^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp0000000000000000^3350"CompileC ./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o ../../../src/ciLibRocketRenderInterface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/x86_64 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug -include /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch -MMD -MT dependencies -MF /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.d --serialize-diagnostics /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../src/ciLibRocketRenderInterface.cpp -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/Objects-normal/x86_64/ciLibRocketRenderInterface.o36"A305A390-10C6-4B82-A3E4-11E41F26545C-
-
-CCpResource ../../../Include/Rocket/Core/Colour.inl ./build/Debug/BasicSample.app/Contents/Resources/Colour.inl
-s387109298.946571
-e387109298.950720
-r1
-xCpResource
-x../../../Include/Rocket/Core/Colour.inl
-x./build/Debug/BasicSample.app/Contents/Resources/Colour.inl
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy ./build/Debug/BasicSample.app/Contents/Resources/Colour.inl9c6df2b2d112b741^6362f3b2d112b741^---0#0#0#-19%DVTDocumentLocation2@145"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Colour.inl000000000080d041^529"CpResource ../../../Include/Rocket/Core/Colour.inl ./build/Debug/BasicSample.app/Contents/Resources/Colour.inl    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Colour.inl /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"BE5D5BE9-2557-46BA-B3E0-772D87C4B014-
-
-CCpResource ../../../Include/Rocket/Core/Dictionary.inl ./build/Debug/BasicSample.app/Contents/Resources/Dictionary.inl
-s387109298.946582
-e387109298.949634
-r1
-xCpResource
-x../../../Include/Rocket/Core/Dictionary.inl
-x./build/Debug/BasicSample.app/Contents/Resources/Dictionary.inl
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy ./build/Debug/BasicSample.app/Contents/Resources/Dictionary.inlc66bf2b2d112b741^581bf3b2d112b741^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Dictionary.inl000000000080d041^541"CpResource ../../../Include/Rocket/Core/Dictionary.inl ./build/Debug/BasicSample.app/Contents/Resources/Dictionary.inl    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Dictionary.inl /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"701D2C81-A446-4395-9487-B09F1479BCF5-
-
-CCpResource ../../../Include/Rocket/Core/Element.inl ./build/Debug/BasicSample.app/Contents/Resources/Element.inl
-s387109298.946590
-e387109298.956217
-r1
-xCpResource
-x../../../Include/Rocket/Core/Element.inl
-x./build/Debug/BasicSample.app/Contents/Resources/Element.inl
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy ./build/Debug/BasicSample.app/Contents/Resources/Element.inl0970f2b2d112b741^a3caf4b2d112b741^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Element.inl000000000080d041^532"CpResource ../../../Include/Rocket/Core/Element.inl ./build/Debug/BasicSample.app/Contents/Resources/Element.inl    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Element.inl /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"DB96AD2B-98E7-4AE2-BA92-2D5FD3940D47-
-
-CCpResource ../../../Include/Rocket/Core/ElementInstancerGeneric.inl ./build/Debug/BasicSample.app/Contents/Resources/ElementInstancerGeneric.inl
-s387109298.946602
-e387109298.955049
-r1
-xCpResource
-x../../../Include/Rocket/Core/ElementInstancerGeneric.inl
-x./build/Debug/BasicSample.app/Contents/Resources/ElementInstancerGeneric.inl
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Copy ./build/Debug/BasicSample.app/Contents/Resources/ElementInstancerGeneric.inl6a6df2b2d112b741^9e7ef4b2d112b741^---0#0#0#-19%DVTDocumentLocation2@162"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/ElementInstancerGeneric.inl000000000080d041^580"CpResource ../../../Include/Rocket/Core/ElementInstancerGeneric.inl ./build/Debug/BasicSample.app/Contents/Resources/ElementInstancerGeneric.inl    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/ElementInstancerGeneric.inl /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"025E9663-D70F-428B-B944-AE41976B4E82-
-
-CCpResource ../../../Include/Rocket/Core/Pool.inl ./build/Debug/BasicSample.app/Contents/Resources/Pool.inl
-s387109298.946605
-e387109298.953982
-r1
-xCpResource
-x../../../Include/Rocket/Core/Pool.inl
-x./build/Debug/BasicSample.app/Contents/Resources/Pool.inl
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy ./build/Debug/BasicSample.app/Contents/Resources/Pool.inl6e6cf2b2d112b741^2a38f4b2d112b741^---0#0#0#-19%DVTDocumentLocation2@143"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Pool.inl000000000080d041^523"CpResource ../../../Include/Rocket/Core/Pool.inl ./build/Debug/BasicSample.app/Contents/Resources/Pool.inl    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Pool.inl /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"96AB5F7D-B5BB-4D84-85F4-46F52F6B93D3-
-
-CCpResource ../../../Include/Rocket/Core/StringBase.inl ./build/Debug/BasicSample.app/Contents/Resources/StringBase.inl
-s387109298.946816
-e387109298.952942
-r1
-xCpResource
-x../../../Include/Rocket/Core/StringBase.inl
-x./build/Debug/BasicSample.app/Contents/Resources/StringBase.inl
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy ./build/Debug/BasicSample.app/Contents/Resources/StringBase.inlce71f2b2d112b741^23f4f3b2d112b741^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/StringBase.inl000000000080d041^541"CpResource ../../../Include/Rocket/Core/StringBase.inl ./build/Debug/BasicSample.app/Contents/Resources/StringBase.inl    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/StringBase.inl /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"7653706F-BC15-4F58-8007-7E8B1FC5A8D0-
-
-CCpResource ../../../Include/Rocket/Core/TypeConverter.inl ./build/Debug/BasicSample.app/Contents/Resources/TypeConverter.inl
-s387109298.949742
-e387109298.957317
-r1
-xCpResource
-x../../../Include/Rocket/Core/TypeConverter.inl
-x./build/Debug/BasicSample.app/Contents/Resources/TypeConverter.inl
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Copy ./build/Debug/BasicSample.app/Contents/Resources/TypeConverter.inl802df3b2d112b741^7313f5b2d112b741^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/TypeConverter.inl000000000080d041^550"CpResource ../../../Include/Rocket/Core/TypeConverter.inl ./build/Debug/BasicSample.app/Contents/Resources/TypeConverter.inl    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/TypeConverter.inl /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"E78B1A29-FD45-41FC-8EEF-74849179EBB4-
-
-CCpResource ../../../Include/Rocket/Core/Variant.inl ./build/Debug/BasicSample.app/Contents/Resources/Variant.inl
-s387109298.949747
-e387109298.958444
-r1
-xCpResource
-x../../../Include/Rocket/Core/Variant.inl
-x./build/Debug/BasicSample.app/Contents/Resources/Variant.inl
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy ./build/Debug/BasicSample.app/Contents/Resources/Variant.inl662ff3b2d112b741^965cf5b2d112b741^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Variant.inl000000000080d041^532"CpResource ../../../Include/Rocket/Core/Variant.inl ./build/Debug/BasicSample.app/Contents/Resources/Variant.inl    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Variant.inl /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"FBC685F1-BD95-4E73-960D-01FD870E81C3-
-
-CCpResource ../../../Include/Rocket/Core/Vector2.inl ./build/Debug/BasicSample.app/Contents/Resources/Vector2.inl
-s387109298.951842
-e387109298.959617
-r1
-xCpResource
-x../../../Include/Rocket/Core/Vector2.inl
-x./build/Debug/BasicSample.app/Contents/Resources/Vector2.inl
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy ./build/Debug/BasicSample.app/Contents/Resources/Vector2.inl35b6f3b2d112b741^a8a9f5b2d112b741^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/Vector2.inl000000000080d041^532"CpResource ../../../Include/Rocket/Core/Vector2.inl ./build/Debug/BasicSample.app/Contents/Resources/Vector2.inl    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../Include/Rocket/Core/Vector2.inl /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"A6F259DB-371C-41BE-90C8-1B31DDD18E07-
-
-CCpResource ../../../bin/rocket.py ./build/Debug/BasicSample.app/Contents/Resources/rocket.py
-s387109298.946548
-e387109298.948628
-r1
-xCpResource
-x../../../bin/rocket.py
-x./build/Debug/BasicSample.app/Contents/Resources/rocket.py
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy ./build/Debug/BasicSample.app/Contents/Resources/rocket.py096cf2b2d112b741^9dd9f2b2d112b741^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/rocket.py000000000080d041^494"CpResource ../../../bin/rocket.py ./build/Debug/BasicSample.app/Contents/Resources/rocket.py    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../../../bin/rocket.py /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"B20C2B9B-FA5D-4452-9D46-D22962C5BFC7-
-
-CCpResource ../assets ./build/Debug/BasicSample.app/Contents/Resources/assets
-s387109298.953206
-e387109298.969728
-r1
-xCpResource
-x../assets
-x./build/Debug/BasicSample.app/Contents/Resources/assets
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy ./build/Debug/BasicSample.app/Contents/Resources/assets060ef4b2d112b741^f240f8b2d112b741^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/assets000000000080d041^465"CpResource ../assets ./build/Debug/BasicSample.app/Contents/Resources/assets    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../assets /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"18FD9C7B-9839-4126-AEE6-53824D79231B-
-
-CCpResource ../resources/CinderApp.icns ./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns
-s387109298.946560
-e387109298.952126
-r1
-xCpResource
-x../resources/CinderApp.icns
-x./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy ./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns376df2b2d112b741^cbbef3b2d112b741^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns000000000080d041^509"CpResource ../resources/CinderApp.icns ./build/Debug/BasicSample.app/Contents/Resources/CinderApp.icns    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/../resources/CinderApp.icns /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Resources36"38EE32E9-DEEA-45DD-B6AF-B7814A359FA2-
-
-CLd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/MacOS/BasicSample normal x86_64
-r0
-
-CProcessInfoPlistFile /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist Info.plist
-s387109298.932890
-e387109298.938701
-r1
-xProcessInfoPlistFile
-x/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist
-xInfo.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist1bf3eeb2d112b741^be50f0b2d112b741^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/Info.plist0000000000000000^489"ProcessInfoPlistFile ./build/Debug/BasicSample.app/Contents/Info.plist Info.plist    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app/Contents/Info.plist36"1243842B-3BFC-4012-8B72-B377CE870960-
-
-CProcessPCH++ /Users/Q/Library/Developer/Xcode/DerivedData/BasicSample-gdzuhjroftzawkdxlppdrkuksndu/Index/PrecompiledHeaders/BasicSample_Prefix-evnukrijxstezhbqacmjipwxarhv_ast/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s387109298.977646
-e387109302.191636
-r1
-xProcessPCH++
-x/var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth
-xBasicSample_Prefix.pch
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile BasicSample_Prefix.pchda91fab2d112b741^0f0f31b6d112b741^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/BasicSample_Prefix.pch0000000000000000^3203"ProcessPCH++ /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth BasicSample_Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch x86_64 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-generated-files.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-own-target-headers.hmap -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-all-target-headers.hmap -iquote /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/BasicSample-project-headers.hmap -iquote../../../../../include -iquote../include -iquote../../../../../blocks/ciLibRocket/src -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug/include -I../../../../../boost -I../../../../../blocks/ciLibRocket/include -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources/x86_64 -I/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/BasicSample.build/Debug/BasicSample.build/DerivedSources -F/Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/build/Debug --serialize-diagnostics /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.dia -c /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/BasicSample_Prefix.pch -o /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/16/7txk9n1j5h96z28y9q8wcmhm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BasicSample_Prefix-ctxozedkhzvukefsuuurdhiivznk/BasicSample_Prefix.pch.d36"D8FB9A18-57A6-4ADE-94DC-0B16712626CE-
-
-CTouch /Users/Q/Code/Cinder_DEV/blocks/ciLibRocket/samples/BasicSample/xcode/./build/Debug/BasicSample.app
-r0
-

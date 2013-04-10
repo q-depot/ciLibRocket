@@ -8,6 +8,20 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
+template <typename T> int getKeyModifier(T event)
+{
+  int ret = 0;
+  if (event.isControlDown())
+    ret |= Rocket::Core::Input::KM_CTRL;
+  if (event.isShiftDown())
+    ret |= Rocket::Core::Input::KM_SHIFT;
+  if (event.isAltDown())
+    ret |= Rocket::Core::Input::KM_ALT;
+  if (event.isMetaDown())
+    ret |= Rocket::Core::Input::KM_META;
+  // TODO: Caps, Num, and Scroll lock
+  return ret;
+}
 
 ciLibRocket::~ciLibRocket()
 {
@@ -26,7 +40,7 @@ void ciLibRocket::setup()
     Rocket::Core::ElementInstancer* custom_instancer = new Rocket::Core::ElementInstancerGeneric< ciLibRocketSlider >();
     Rocket::Core::Factory::RegisterElementInstancer( "slider", custom_instancer );
     custom_instancer->RemoveReference();
-    
+  
     mContext = NULL;
     mContext = Rocket::Core::CreateContext( "main", Rocket::Core::Vector2i( 1024, 768 ) );
 
@@ -46,6 +60,7 @@ void ciLibRocket::setup()
     Rocket::Core::RegisterPlugin(this);
   
 	registerCallbacks();
+  initKeyMap();
 }
 
 
@@ -125,27 +140,28 @@ bool ciLibRocket::mouseWheel( MouseEvent event )
     return false;
 }
 
-
 bool ciLibRocket::keyDown( KeyEvent event )
 {
-//	if(key < OFX_LIBROCKET_MAX_KEYS)
-//		keyState[key] = true;
-//	Rocket::Core::Input::KeyIdentifier key_identifier = key_identifier_map[key];
-//	if (key_identifier != Rocket::Core::Input::KI_UNKNOWN)
-//		context->ProcessKeyDown(key_identifier, 0);
-//	if(key != OF_KEY_BACKSPACE && key != OF_KEY_DEL && key != OF_KEY_LEFT && key != OF_KEY_RIGHT && key != OF_KEY_DOWN && key != OF_KEY_UP && key != OF_KEY_RETURN)
-//		context->ProcessTextInput(key);
-    
+    auto i = mCinderKeyToRocket.find(event.getCode());
+    if (i != mCinderKeyToRocket.end())
+    {
+        //    printf("keydown: cinder: %d, rocket: %d\n", i->first, i->second);
+        int modifierState = getKeyModifier(event);
+        mContext->ProcessKeyDown(i->second, modifierState);
+        Rocket::Core::word character = getCharacterCode(i->second, modifierState);
+        if (character > 0)
+            mContext->ProcessTextInput(character);
+    }
     return false;
 }
 
-
 bool ciLibRocket::keyUp( KeyEvent event )
 {
-    //    if(key < OFX_LIBROCKET_MAX_KEYS)
-    //    keyState[key] = false;
-    //	Rocket::Core::Input::KeyIdentifier key_identifier = key_identifier_map[key];
-//    mContext->ProcessKeyUp( key_identifier, getKeyModifier());
+    auto i = mCinderKeyToRocket.find(event.getCode());
+    if (i != mCinderKeyToRocket.end())
+    {
+        mContext->ProcessKeyUp(i->second, getKeyModifier(event));
+    }
     return false;
 }
 
@@ -156,17 +172,6 @@ void ciLibRocket::resize()
 }
 
 
-int ciLibRocket::getKeyModifier( MouseEvent event )
-{
-    int keyModifier = 0;
-    if ( event.isShiftDown() )      keyModifier |= Rocket::Core::Input::KM_SHIFT;
-    if ( event.isControlDown() )	keyModifier |= Rocket::Core::Input::KM_CTRL;
-    if ( event.isAltDown() )        keyModifier |= Rocket::Core::Input::KM_ALT;
-    
-    return keyModifier;
-}
-
-
 int ciLibRocket::getMouseButton( MouseEvent event )
 {
     if ( event.isLeftDown() )       return 0;
@@ -174,108 +179,430 @@ int ciLibRocket::getMouseButton( MouseEvent event )
     else                            return 2;
 }
 
+void ciLibRocket::initKeyMap()
+{
+  mCinderKeyToRocket[KeyEvent::KEY_BACKSPACE] = Rocket::Core::Input::KI_BACK;
+  mCinderKeyToRocket[KeyEvent::KEY_TAB] = Rocket::Core::Input::KI_TAB;
+  mCinderKeyToRocket[KeyEvent::KEY_CLEAR] = Rocket::Core::Input::KI_CLEAR;
+  mCinderKeyToRocket[KeyEvent::KEY_RETURN] = Rocket::Core::Input::KI_RETURN;
+  mCinderKeyToRocket[KeyEvent::KEY_PAUSE] = Rocket::Core::Input::KI_PAUSE;
+  mCinderKeyToRocket[KeyEvent::KEY_ESCAPE] = Rocket::Core::Input::KI_ESCAPE;
+  mCinderKeyToRocket[KeyEvent::KEY_SPACE] = Rocket::Core::Input::KI_SPACE;
+  mCinderKeyToRocket[KeyEvent::KEY_QUOTE] = Rocket::Core::Input::KI_OEM_7;
+  mCinderKeyToRocket[KeyEvent::KEY_PLUS] = Rocket::Core::Input::KI_OEM_PLUS;
+  mCinderKeyToRocket[KeyEvent::KEY_COMMA] = Rocket::Core::Input::KI_OEM_COMMA;
+  mCinderKeyToRocket[KeyEvent::KEY_MINUS] = Rocket::Core::Input::KI_OEM_MINUS;
+  mCinderKeyToRocket[KeyEvent::KEY_PERIOD] = Rocket::Core::Input::KI_OEM_PERIOD;
+  mCinderKeyToRocket[KeyEvent::KEY_SLASH] = Rocket::Core::Input::KI_OEM_2;
+  mCinderKeyToRocket[KeyEvent::KEY_0] = Rocket::Core::Input::KI_0;
+  mCinderKeyToRocket[KeyEvent::KEY_1] = Rocket::Core::Input::KI_1;
+  mCinderKeyToRocket[KeyEvent::KEY_2] = Rocket::Core::Input::KI_2;
+  mCinderKeyToRocket[KeyEvent::KEY_3] = Rocket::Core::Input::KI_3;
+  mCinderKeyToRocket[KeyEvent::KEY_4] = Rocket::Core::Input::KI_4;
+  mCinderKeyToRocket[KeyEvent::KEY_5] = Rocket::Core::Input::KI_5;
+  mCinderKeyToRocket[KeyEvent::KEY_6] = Rocket::Core::Input::KI_6;
+  mCinderKeyToRocket[KeyEvent::KEY_7] = Rocket::Core::Input::KI_7;
+  mCinderKeyToRocket[KeyEvent::KEY_8] = Rocket::Core::Input::KI_8;
+  mCinderKeyToRocket[KeyEvent::KEY_9] = Rocket::Core::Input::KI_9;
+  mCinderKeyToRocket[KeyEvent::KEY_SEMICOLON] = Rocket::Core::Input::KI_OEM_1;
+  mCinderKeyToRocket[KeyEvent::KEY_EQUALS] = Rocket::Core::Input::KI_OEM_PLUS;
+  mCinderKeyToRocket[KeyEvent::KEY_LEFTBRACKET] = Rocket::Core::Input::KI_OEM_4;
+  mCinderKeyToRocket[KeyEvent::KEY_BACKSLASH] = Rocket::Core::Input::KI_OEM_5;
+  mCinderKeyToRocket[KeyEvent::KEY_RIGHTBRACKET] = Rocket::Core::Input::KI_OEM_6;
+  mCinderKeyToRocket[KeyEvent::KEY_BACKQUOTE] = Rocket::Core::Input::KI_OEM_3;
+  mCinderKeyToRocket[KeyEvent::KEY_a] = Rocket::Core::Input::KI_A;
+  mCinderKeyToRocket[KeyEvent::KEY_b] = Rocket::Core::Input::KI_B;
+  mCinderKeyToRocket[KeyEvent::KEY_c] = Rocket::Core::Input::KI_C;
+  mCinderKeyToRocket[KeyEvent::KEY_d] = Rocket::Core::Input::KI_D;
+  mCinderKeyToRocket[KeyEvent::KEY_e] = Rocket::Core::Input::KI_E;
+  mCinderKeyToRocket[KeyEvent::KEY_f] = Rocket::Core::Input::KI_F;
+  mCinderKeyToRocket[KeyEvent::KEY_g] = Rocket::Core::Input::KI_G;
+  mCinderKeyToRocket[KeyEvent::KEY_h] = Rocket::Core::Input::KI_H;
+  mCinderKeyToRocket[KeyEvent::KEY_i] = Rocket::Core::Input::KI_I;
+  mCinderKeyToRocket[KeyEvent::KEY_j] = Rocket::Core::Input::KI_J;
+  mCinderKeyToRocket[KeyEvent::KEY_k] = Rocket::Core::Input::KI_K;
+  mCinderKeyToRocket[KeyEvent::KEY_l] = Rocket::Core::Input::KI_L;
+  mCinderKeyToRocket[KeyEvent::KEY_m] = Rocket::Core::Input::KI_M;
+  mCinderKeyToRocket[KeyEvent::KEY_n] = Rocket::Core::Input::KI_N;
+  mCinderKeyToRocket[KeyEvent::KEY_o] = Rocket::Core::Input::KI_O;
+  mCinderKeyToRocket[KeyEvent::KEY_p] = Rocket::Core::Input::KI_P;
+  mCinderKeyToRocket[KeyEvent::KEY_q] = Rocket::Core::Input::KI_Q;
+  mCinderKeyToRocket[KeyEvent::KEY_r] = Rocket::Core::Input::KI_R;
+  mCinderKeyToRocket[KeyEvent::KEY_s] = Rocket::Core::Input::KI_S;
+  mCinderKeyToRocket[KeyEvent::KEY_t] = Rocket::Core::Input::KI_T;
+  mCinderKeyToRocket[KeyEvent::KEY_u] = Rocket::Core::Input::KI_U;
+  mCinderKeyToRocket[KeyEvent::KEY_v] = Rocket::Core::Input::KI_V;
+  mCinderKeyToRocket[KeyEvent::KEY_w] = Rocket::Core::Input::KI_W;
+  mCinderKeyToRocket[KeyEvent::KEY_x] = Rocket::Core::Input::KI_X;
+  mCinderKeyToRocket[KeyEvent::KEY_y] = Rocket::Core::Input::KI_Y;
+  mCinderKeyToRocket[KeyEvent::KEY_z] = Rocket::Core::Input::KI_Z;
+  mCinderKeyToRocket[KeyEvent::KEY_DELETE] = Rocket::Core::Input::KI_DELETE;
+  
+  mCinderKeyToRocket[KeyEvent::KEY_KP0] = Rocket::Core::Input::KI_NUMPAD0;
+  mCinderKeyToRocket[KeyEvent::KEY_KP1] = Rocket::Core::Input::KI_NUMPAD1;
+  mCinderKeyToRocket[KeyEvent::KEY_KP2] = Rocket::Core::Input::KI_NUMPAD2;
+  mCinderKeyToRocket[KeyEvent::KEY_KP3] = Rocket::Core::Input::KI_NUMPAD3;
+  mCinderKeyToRocket[KeyEvent::KEY_KP4] = Rocket::Core::Input::KI_NUMPAD4;
+  mCinderKeyToRocket[KeyEvent::KEY_KP5] = Rocket::Core::Input::KI_NUMPAD5;
+  mCinderKeyToRocket[KeyEvent::KEY_KP6] = Rocket::Core::Input::KI_NUMPAD6;
+  mCinderKeyToRocket[KeyEvent::KEY_KP7] = Rocket::Core::Input::KI_NUMPAD7;
+  mCinderKeyToRocket[KeyEvent::KEY_KP8] = Rocket::Core::Input::KI_NUMPAD8;
+  mCinderKeyToRocket[KeyEvent::KEY_KP9] = Rocket::Core::Input::KI_NUMPAD9;
+  
+  mCinderKeyToRocket[KeyEvent::KEY_KP_PERIOD] = Rocket::Core::Input::KI_DECIMAL;
+  mCinderKeyToRocket[KeyEvent::KEY_KP_DIVIDE] = Rocket::Core::Input::KI_DIVIDE;
+  mCinderKeyToRocket[KeyEvent::KEY_KP_MULTIPLY] = Rocket::Core::Input::KI_MULTIPLY;
+  mCinderKeyToRocket[KeyEvent::KEY_KP_MINUS] = Rocket::Core::Input::KI_OEM_MINUS;
+  mCinderKeyToRocket[KeyEvent::KEY_KP_PLUS] = Rocket::Core::Input::KI_ADD;
+  mCinderKeyToRocket[KeyEvent::KEY_KP_ENTER] = Rocket::Core::Input::KI_NUMPADENTER;
+  mCinderKeyToRocket[KeyEvent::KEY_KP_EQUALS] = Rocket::Core::Input::KI_OEM_NEC_EQUAL;
+  
+  mCinderKeyToRocket[KeyEvent::KEY_UP] = Rocket::Core::Input::KI_UP;
+  mCinderKeyToRocket[KeyEvent::KEY_DOWN] = Rocket::Core::Input::KI_DOWN;
+  mCinderKeyToRocket[KeyEvent::KEY_RIGHT] = Rocket::Core::Input::KI_RIGHT;
+  mCinderKeyToRocket[KeyEvent::KEY_LEFT] = Rocket::Core::Input::KI_LEFT;
+  mCinderKeyToRocket[KeyEvent::KEY_INSERT] = Rocket::Core::Input::KI_INSERT;
+  mCinderKeyToRocket[KeyEvent::KEY_HOME] = Rocket::Core::Input::KI_HOME;
+  mCinderKeyToRocket[KeyEvent::KEY_END] = Rocket::Core::Input::KI_END;
+  mCinderKeyToRocket[KeyEvent::KEY_PAGEUP] = Rocket::Core::Input::KI_PRIOR;
+  mCinderKeyToRocket[KeyEvent::KEY_PAGEDOWN] = Rocket::Core::Input::KI_NEXT;
+  
+  mCinderKeyToRocket[KeyEvent::KEY_F1] = Rocket::Core::Input::KI_F1;
+  mCinderKeyToRocket[KeyEvent::KEY_F2] = Rocket::Core::Input::KI_F2;
+  mCinderKeyToRocket[KeyEvent::KEY_F3] = Rocket::Core::Input::KI_F3;
+  mCinderKeyToRocket[KeyEvent::KEY_F4] = Rocket::Core::Input::KI_F4;
+  mCinderKeyToRocket[KeyEvent::KEY_F5] = Rocket::Core::Input::KI_F5;
+  mCinderKeyToRocket[KeyEvent::KEY_F6] = Rocket::Core::Input::KI_F6;
+  mCinderKeyToRocket[KeyEvent::KEY_F7] = Rocket::Core::Input::KI_F7;
+  mCinderKeyToRocket[KeyEvent::KEY_F8] = Rocket::Core::Input::KI_F8;
+  mCinderKeyToRocket[KeyEvent::KEY_F9] = Rocket::Core::Input::KI_F9;
+  mCinderKeyToRocket[KeyEvent::KEY_F10] = Rocket::Core::Input::KI_F10;
+  mCinderKeyToRocket[KeyEvent::KEY_F11] = Rocket::Core::Input::KI_F11;
+  mCinderKeyToRocket[KeyEvent::KEY_F12] = Rocket::Core::Input::KI_F12;
+  mCinderKeyToRocket[KeyEvent::KEY_F13] = Rocket::Core::Input::KI_F13;
+  mCinderKeyToRocket[KeyEvent::KEY_F14] = Rocket::Core::Input::KI_F14;
+  mCinderKeyToRocket[KeyEvent::KEY_F15] = Rocket::Core::Input::KI_F15;
+  
+  mCinderKeyToRocket[KeyEvent::KEY_NUMLOCK] = Rocket::Core::Input::KI_NUMLOCK;
+  mCinderKeyToRocket[KeyEvent::KEY_CAPSLOCK] = Rocket::Core::Input::KI_CAPITAL;
+  mCinderKeyToRocket[KeyEvent::KEY_SCROLLOCK] = Rocket::Core::Input::KI_SCROLL;
+  mCinderKeyToRocket[KeyEvent::KEY_RSHIFT] = Rocket::Core::Input::KI_RSHIFT;
+  mCinderKeyToRocket[KeyEvent::KEY_LSHIFT] = Rocket::Core::Input::KI_LSHIFT;
+  mCinderKeyToRocket[KeyEvent::KEY_RCTRL] = Rocket::Core::Input::KI_RCONTROL;
+  mCinderKeyToRocket[KeyEvent::KEY_LCTRL] = Rocket::Core::Input::KI_LCONTROL;
+  
+  mCinderKeyToRocket[KeyEvent::KEY_RMETA] = Rocket::Core::Input::KI_RMETA;
+  mCinderKeyToRocket[KeyEvent::KEY_LMETA] = Rocket::Core::Input::KI_LMETA;
+  
+  mCinderKeyToRocket[KeyEvent::KEY_HELP] = Rocket::Core::Input::KI_HELP;
+  mCinderKeyToRocket[KeyEvent::KEY_PRINT] = Rocket::Core::Input::KI_SNAPSHOT;
+  mCinderKeyToRocket[KeyEvent::KEY_MENU] = Rocket::Core::Input::KI_LMENU;
+  mCinderKeyToRocket[KeyEvent::KEY_POWER] = Rocket::Core::Input::KI_POWER;
+}
 
+char ascii_map[4][51] =
+{
+  // shift off and capslock off
+  {
+		0,
+		' ',
+		'0',
+		'1',
+		'2',
+		'3',
+		'4',
+		'5',
+		'6',
+		'7',
+		'8',
+		'9',
+		'a',
+		'b',
+		'c',
+		'd',
+		'e',
+		'f',
+		'g',
+		'h',
+		'i',
+		'j',
+		'k',
+		'l',
+		'm',
+		'n',
+		'o',
+		'p',
+		'q',
+		'r',
+		's',
+		't',
+		'u',
+		'v',
+		'w',
+		'x',
+		'y',
+		'z',
+		';',
+		'=',
+		',',
+		'-',
+		'.',
+		'/',
+		'`',
+		'[',
+		'\\',
+		']',
+		'\'',
+		0,
+		0
+	},
+  
+	// shift on and capslock off
+  {
+		0,
+		' ',
+		')',
+		'!',
+		'@',
+		'#',
+		'$',
+		'%',
+		'^',
+		'&',
+		'*',
+		'(',
+		'A',
+		'B',
+		'C',
+		'D',
+		'E',
+		'F',
+		'G',
+		'H',
+		'I',
+		'J',
+		'K',
+		'L',
+		'M',
+		'N',
+		'O',
+		'P',
+		'Q',
+		'R',
+		'S',
+		'T',
+		'U',
+		'V',
+		'W',
+		'X',
+		'Y',
+		'Z',
+		':',
+		'+',
+		'<',
+		'_',
+		'>',
+		'?',
+		'~',
+		'{',
+		'|',
+		'}',
+		'"',
+		0,
+		0
+	},
+  
+	// shift on and capslock on
+  {
+		0,
+		' ',
+		')',
+		'!',
+		'@',
+		'#',
+		'$',
+		'%',
+		'^',
+		'&',
+		'*',
+		'(',
+		'a',
+		'b',
+		'c',
+		'd',
+		'e',
+		'f',
+		'g',
+		'h',
+		'i',
+		'j',
+		'k',
+		'l',
+		'm',
+		'n',
+		'o',
+		'p',
+		'q',
+		'r',
+		's',
+		't',
+		'u',
+		'v',
+		'w',
+		'x',
+		'y',
+		'z',
+		':',
+		'+',
+		'<',
+		'_',
+		'>',
+		'?',
+		'~',
+		'{',
+		'|',
+		'}',
+		'"',
+		0,
+		0
+	},
+  
+	// shift off and capslock on
+  {
+		0,
+		' ',
+		'1',
+		'2',
+		'3',
+		'4',
+		'5',
+		'6',
+		'7',
+		'8',
+		'9',
+		'0',
+		'A',
+		'B',
+		'C',
+		'D',
+		'E',
+		'F',
+		'G',
+		'H',
+		'I',
+		'J',
+		'K',
+		'L',
+		'M',
+		'N',
+		'O',
+		'P',
+		'Q',
+		'R',
+		'S',
+		'T',
+		'U',
+		'V',
+		'W',
+		'X',
+		'Y',
+		'Z',
+		';',
+		'=',
+		',',
+		'-',
+		'.',
+		'/',
+		'`',
+		'[',
+		'\\',
+		']',
+		'\'',
+		0,
+		0
+	}
+};
 
-//void ciLibRocket::initialiseKeyMap()
-//{
-//	memset(key_identifier_map, sizeof(key_identifier_map), 0);
-//	key_identifier_map['a'] = Rocket::Core::Input::KI_A;
-//	key_identifier_map['s'] = Rocket::Core::Input::KI_S;
-//	key_identifier_map['d'] = Rocket::Core::Input::KI_D;
-//	key_identifier_map['f'] = Rocket::Core::Input::KI_F;
-//	key_identifier_map['h'] = Rocket::Core::Input::KI_H;
-//	key_identifier_map['g'] = Rocket::Core::Input::KI_G;
-//	key_identifier_map['z'] = Rocket::Core::Input::KI_Z;
-//	key_identifier_map['x'] = Rocket::Core::Input::KI_X;
-//	key_identifier_map['c'] = Rocket::Core::Input::KI_C;
-//	key_identifier_map['v'] = Rocket::Core::Input::KI_V;
-//	key_identifier_map['b'] = Rocket::Core::Input::KI_B;
-//	key_identifier_map['q'] = Rocket::Core::Input::KI_Q;
-//	key_identifier_map['w'] = Rocket::Core::Input::KI_W;
-//	key_identifier_map['e'] = Rocket::Core::Input::KI_E;
-//	key_identifier_map['r'] = Rocket::Core::Input::KI_R;
-//	key_identifier_map['y'] = Rocket::Core::Input::KI_Y;
-//	key_identifier_map['t'] = Rocket::Core::Input::KI_T;
-//	key_identifier_map['1'] = Rocket::Core::Input::KI_1;
-//	key_identifier_map['2'] = Rocket::Core::Input::KI_2;
-//	key_identifier_map['3'] = Rocket::Core::Input::KI_3;
-//	key_identifier_map['4'] = Rocket::Core::Input::KI_4;
-//	key_identifier_map['6'] = Rocket::Core::Input::KI_6;
-//	key_identifier_map['5'] = Rocket::Core::Input::KI_5;
-//	key_identifier_map['+'] = Rocket::Core::Input::KI_OEM_PLUS;
-//	key_identifier_map['9'] = Rocket::Core::Input::KI_9;
-//	key_identifier_map['7'] = Rocket::Core::Input::KI_7;
-//	key_identifier_map['-'] = Rocket::Core::Input::KI_OEM_MINUS;
-//	key_identifier_map['8'] = Rocket::Core::Input::KI_8;
-//	key_identifier_map['0'] = Rocket::Core::Input::KI_0;
-//	key_identifier_map[0x1E] = Rocket::Core::Input::KI_OEM_6;
-//	key_identifier_map[0x1F] = Rocket::Core::Input::KI_O;
-//	key_identifier_map[0x20] = Rocket::Core::Input::KI_U;
-//	key_identifier_map[0x21] = Rocket::Core::Input::KI_OEM_4;
-//	key_identifier_map[0x22] = Rocket::Core::Input::KI_I;
-//	key_identifier_map[0x23] = Rocket::Core::Input::KI_P;
-//	key_identifier_map[OF_KEY_RETURN] = Rocket::Core::Input::KI_RETURN;
-//	key_identifier_map[0x25] = Rocket::Core::Input::KI_L;
-//	key_identifier_map[0x26] = Rocket::Core::Input::KI_J;
-//	key_identifier_map[0x27] = Rocket::Core::Input::KI_OEM_7;
-//	key_identifier_map[0x28] = Rocket::Core::Input::KI_K;
-//	key_identifier_map[0x29] = Rocket::Core::Input::KI_OEM_1;
-//	key_identifier_map[0x2A] = Rocket::Core::Input::KI_OEM_5;
-//	key_identifier_map[0x2B] = Rocket::Core::Input::KI_OEM_COMMA;
-//	key_identifier_map[0x2C] = Rocket::Core::Input::KI_OEM_2;
-//	key_identifier_map[0x2D] = Rocket::Core::Input::KI_N;
-//	key_identifier_map[0x2E] = Rocket::Core::Input::KI_M;
-//	key_identifier_map[0x2F] = Rocket::Core::Input::KI_OEM_PERIOD;
-//	key_identifier_map[9] = Rocket::Core::Input::KI_TAB;
-//	key_identifier_map[' '] = Rocket::Core::Input::KI_SPACE;
-//	key_identifier_map[0x32] = Rocket::Core::Input::KI_OEM_3;
-//	key_identifier_map[OF_KEY_BACKSPACE] = Rocket::Core::Input::KI_BACK;
-//	key_identifier_map[0x35] = Rocket::Core::Input::KI_ESCAPE;
-//	key_identifier_map[0x37] = Rocket::Core::Input::KI_LMETA;
-//	key_identifier_map[0x38] = Rocket::Core::Input::KI_LSHIFT;
-//	key_identifier_map[0x39] = Rocket::Core::Input::KI_CAPITAL;
-//	key_identifier_map[0x3A] = Rocket::Core::Input::KI_LMENU;
-//	key_identifier_map[0x3B] = Rocket::Core::Input::KI_LCONTROL;
-//	key_identifier_map[0x41] = Rocket::Core::Input::KI_DECIMAL;
-//	key_identifier_map[0x43] = Rocket::Core::Input::KI_MULTIPLY;
-//	key_identifier_map[0x45] = Rocket::Core::Input::KI_ADD;
-//	key_identifier_map[0x4B] = Rocket::Core::Input::KI_DIVIDE;
-//	key_identifier_map[0x4C] = Rocket::Core::Input::KI_NUMPADENTER;
-//	key_identifier_map[0x4E] = Rocket::Core::Input::KI_SUBTRACT;
-//	key_identifier_map[0x51] = Rocket::Core::Input::KI_OEM_PLUS;
-//	key_identifier_map[364] = Rocket::Core::Input::KI_NUMPAD0;
-//	key_identifier_map[363] = Rocket::Core::Input::KI_NUMPAD1;
-//	key_identifier_map[359] = Rocket::Core::Input::KI_NUMPAD2;
-//	key_identifier_map[361] = Rocket::Core::Input::KI_NUMPAD3;
-//	key_identifier_map[0x56] = Rocket::Core::Input::KI_NUMPAD4;
-//	key_identifier_map[0x57] = Rocket::Core::Input::KI_NUMPAD5;
-//	key_identifier_map[0x58] = Rocket::Core::Input::KI_NUMPAD6;
-//	key_identifier_map[0x59] = Rocket::Core::Input::KI_NUMPAD7;
-//	key_identifier_map[0x5B] = Rocket::Core::Input::KI_NUMPAD8;
-//	key_identifier_map[0x5C] = Rocket::Core::Input::KI_NUMPAD9;
-//	key_identifier_map[0x60] = Rocket::Core::Input::KI_F5;
-//	key_identifier_map[0x61] = Rocket::Core::Input::KI_F6;
-//	key_identifier_map[0x62] = Rocket::Core::Input::KI_F7;
-//	key_identifier_map[0x63] = Rocket::Core::Input::KI_F3;
-//	key_identifier_map[0x64] = Rocket::Core::Input::KI_F8;
-//	key_identifier_map[0x65] = Rocket::Core::Input::KI_F9;
-//	key_identifier_map[0x67] = Rocket::Core::Input::KI_F11;
-//	key_identifier_map[0x69] = Rocket::Core::Input::KI_F13;
-//	key_identifier_map[0x6B] = Rocket::Core::Input::KI_F14;
-//	key_identifier_map[0x6D] = Rocket::Core::Input::KI_F10;
-//	key_identifier_map[0x6F] = Rocket::Core::Input::KI_F12;
-//	key_identifier_map[0x71] = Rocket::Core::Input::KI_F15;
-//	key_identifier_map[OF_KEY_HOME] = Rocket::Core::Input::KI_HOME;
-//	key_identifier_map[OF_KEY_PAGE_UP] = Rocket::Core::Input::KI_PRIOR;
-//	key_identifier_map[OF_KEY_DEL] = Rocket::Core::Input::KI_DELETE;
-//	key_identifier_map[OF_KEY_F4] = Rocket::Core::Input::KI_F4;
-//	key_identifier_map[OF_KEY_END] = Rocket::Core::Input::KI_END;
-//	key_identifier_map[OF_KEY_F2] = Rocket::Core::Input::KI_F2;
-//	key_identifier_map[OF_KEY_PAGE_DOWN] = Rocket::Core::Input::KI_NEXT;
-//	key_identifier_map[OF_KEY_F1] = Rocket::Core::Input::KI_F1;
-//	key_identifier_map[OF_KEY_LEFT] = Rocket::Core::Input::KI_LEFT;
-//	key_identifier_map[OF_KEY_RIGHT] = Rocket::Core::Input::KI_RIGHT;
-//	key_identifier_map[OF_KEY_DOWN] = Rocket::Core::Input::KI_DOWN;
-//	key_identifier_map[OF_KEY_UP] = Rocket::Core::Input::KI_UP;
-//}
-//
+char keypad_map[2][18] =
+{
+	{
+		'0',
+		'1',
+		'2',
+		'3',
+		'4',
+		'5',
+		'6',
+		'7',
+		'8',
+		'9',
+		'\n',
+		'*',
+		'+',
+		0,
+		'-',
+		'.',
+		'/',
+		'='
+	},
+  
+	{
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		'\n',
+		'*',
+		'+',
+		0,
+		'-',
+		0,
+		'/',
+		'='
+	}
+};
+
+// Returns the character code for a key identifer / key modifier combination.
+Rocket::Core::word ciLibRocket::getCharacterCode(Rocket::Core::Input::KeyIdentifier key_identifier, int key_modifier_state)
+{
+	// Check if we have a keycode capable of generating characters on the main keyboard (ie, not on the numeric
+	// keypad; that is dealt with below).
+	if (key_identifier <= Rocket::Core::Input::KI_OEM_102)
+	{
+		// Get modifier states
+		bool shift = (key_modifier_state & Rocket::Core::Input::KM_SHIFT) > 0;
+		bool capslock = (key_modifier_state & Rocket::Core::Input::KM_CAPSLOCK) > 0;
+    
+		// Return character code based on identifier and modifiers
+		if (shift && !capslock)
+			return ascii_map[1][key_identifier];
+    
+		if (shift && capslock)
+			return ascii_map[2][key_identifier];
+    
+		if (!shift && capslock)
+			return ascii_map[3][key_identifier];
+    
+		return ascii_map[0][key_identifier];
+	}
+  
+	// Check if we have a keycode from the numeric keypad.
+	else if (key_identifier <= Rocket::Core::Input::KI_OEM_NEC_EQUAL)
+	{
+		if (key_modifier_state & Rocket::Core::Input::KM_NUMLOCK)
+			return keypad_map[0][key_identifier - Rocket::Core::Input::KI_NUMPAD0];
+		else
+			return keypad_map[1][key_identifier - Rocket::Core::Input::KI_NUMPAD0];
+	}
+  
+	else if (key_identifier == Rocket::Core::Input::KI_RETURN)
+		return '\n';
+  
+	return 0;
+}
