@@ -5,6 +5,17 @@
         <link type="text/rcss" href="rkt.rcss"/>
         <link type="text/rcss" href="style.rcss"/>
 		<link type="text/template" href="window.rml" />
+		<style>
+			form div
+			{
+				width: 200px;
+				margin: auto;
+			}
+      input.text
+      {
+        background-color: black;
+      }
+    </style>
 	</head>
 
 	<body template="window">
@@ -16,10 +27,17 @@
 
     <input id="test_slider" type="range" min="0" max="10" value="5" />
     
+ 		<form onsubmit="store; goto main_menu">
+			<div>
+        Text input:
+        <input id="test_text_input" type="text" name="text_test"/>
+        <br/>
     <select>
     <option>aaaa</option>
     <option>asdasd</option>
     <option>3412431</option>
     </select>
+    </div>
+    </form>
 	</body>
 </rml>
